@@ -45,46 +45,46 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-        <div className="container py-6">
+        <div className="container py-4">
           <div className="flex items-center gap-4">
-            <img src="/cbts-logo.svg" alt="CBTS Logo" className="h-12 w-auto" />
+            <img src="/cbts-logo.svg" alt="CBTS Logo" className="h-10 w-auto" />
             <div className="border-l border-border pl-4">
-              <h1 className="text-3xl font-bold tracking-tight">Azure Monitor Analytics Dashboard</h1>
-              <p className="text-muted-foreground">Comprehensive analysis of alert rules and correlations</p>
+              <h1 className="text-2xl font-bold tracking-tight">Azure Monitor Analytics Dashboard</h1>
+              <p className="text-sm text-muted-foreground">Comprehensive analysis of alert rules and correlations</p>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="container py-8">
+      <main className="container py-6">
         {/* Key Metrics */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 border-blue-500/20">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Total Alerts</CardTitle>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-xs font-medium text-muted-foreground">Total Alerts</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold">{insights.total_alerts.toLocaleString()}</div>
+              <div className="text-2xl font-bold">{insights.total_alerts.toLocaleString()}</div>
               <p className="text-xs text-muted-foreground mt-1">Active alert rules</p>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 border-purple-500/20">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Unique Alerts</CardTitle>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-xs font-medium text-muted-foreground">Unique Alerts</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold">{insights.unique_alert_names.toLocaleString()}</div>
+              <div className="text-2xl font-bold">{insights.unique_alert_names.toLocaleString()}</div>
               <p className="text-xs text-muted-foreground mt-1">Distinct alert names</p>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-red-500/10 to-red-600/5 border-red-500/20">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Most Common Severity</CardTitle>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-xs font-medium text-muted-foreground">Most Common Severity</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold">{insights.most_common_severity}</div>
+              <div className="text-2xl font-bold">{insights.most_common_severity}</div>
               <p className="text-xs text-muted-foreground mt-1">
                 {insights.severity_distribution[insights.most_common_severity]} alerts
               </p>
@@ -92,11 +92,11 @@ export default function Home() {
           </Card>
 
           <Card className="bg-gradient-to-br from-green-500/10 to-green-600/5 border-green-500/20">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Top Resource Type</CardTitle>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-xs font-medium text-muted-foreground">Top Resource Type</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-xl font-bold">Application Insights</div>
+              <div className="text-lg font-bold">Application Insights</div>
               <p className="text-xs text-muted-foreground mt-1">
                 {insights.resource_type_distribution["Application Insights"]} alerts (
                 {((insights.resource_type_distribution["Application Insights"] / insights.total_alerts) * 100).toFixed(
@@ -109,7 +109,7 @@ export default function Home() {
         </div>
 
         {/* Key Insights */}
-        <Card className="mb-8 border-primary/20 bg-primary/5">
+        <Card className="mb-6 border-primary/20 bg-primary/5">
           <CardHeader>
             <div className="flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-primary" />
@@ -130,7 +130,7 @@ export default function Home() {
         </Card>
 
         {/* Correlation Analysis */}
-        <Card className="mb-8">
+        <Card className="mb-6">
           <CardHeader>
             <CardTitle>Correlation Analysis</CardTitle>
             <CardDescription>Statistical relationships between variables (encoded as numerical values)</CardDescription>
@@ -572,7 +572,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border mt-16 py-6 bg-card/50">
+      <footer className="border-t border-border mt-8 py-4 bg-card/50">
         <div className="container text-center text-sm text-muted-foreground">
           <p>Azure Monitor Analytics Dashboard • Data-driven insights for alert management</p>
         </div>

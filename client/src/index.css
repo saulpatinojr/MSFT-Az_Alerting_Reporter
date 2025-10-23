@@ -136,3 +136,11 @@
     letter-spacing: -0.02em;
   }
 }
+
+
+@layer utilities {
+  .container {
+    max-width: 1600px !important;
+  }
+}
+
