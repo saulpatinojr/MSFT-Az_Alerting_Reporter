@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, TrendingUp, Activity, Database } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { AlertCircle, TrendingUp, Activity, Database, Maximize2, Minimize2 } from "lucide-react";
 
 interface InsightsData {
   total_alerts: number;
@@ -22,6 +23,7 @@ interface InsightsData {
 
 export default function Home() {
   const [insights, setInsights] = useState<InsightsData | null>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     fetch("/visualizations/insights.json")
@@ -29,6 +31,22 @@ export default function Home() {
       .then((data) => setInsights(data))
       .catch((err) => console.error("Failed to load insights:", err));
   }, []);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  };
 
   if (!insights) {
     return (
@@ -46,12 +64,32 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="container py-4">
-          <div className="flex items-center gap-4">
-            <img src="/cbts-logo.svg" alt="CBTS Logo" className="h-10 w-auto" />
-            <div className="border-l border-border pl-4">
-              <h1 className="text-2xl font-bold tracking-tight">Azure Monitor Analytics Dashboard</h1>
-              <p className="text-sm text-muted-foreground">Comprehensive analysis of alert rules and correlations</p>
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <img src="/cbts-logo.svg" alt="CBTS Logo" className="h-10 w-auto" />
+              <div className="border-l border-border pl-4">
+                <h1 className="text-2xl font-bold tracking-tight">Azure Monitor Analytics Dashboard</h1>
+                <p className="text-sm text-muted-foreground">Comprehensive analysis of alert rules and correlations</p>
+              </div>
             </div>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={toggleFullscreen}
+              className="flex items-center gap-2"
+            >
+              {isFullscreen ? (
+                <>
+                  <Minimize2 className="w-4 h-4" />
+                  <span className="hidden sm:inline">Exit Fullscreen</span>
+                </>
+              ) : (
+                <>
+                  <Maximize2 className="w-4 h-4" />
+                  <span className="hidden sm:inline">Fullscreen</span>
+                </>
+              )}
+            </Button>
           </div>
         </div>
       </header>
