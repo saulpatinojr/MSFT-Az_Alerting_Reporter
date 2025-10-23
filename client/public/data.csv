@@ -1,0 +1,1001 @@
+Name,Condition,Severity,Target scope,Target resource type,Signal type,Status
+Abbott File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration- Failed to connect to SFTP,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration- Failed to connect to SFTP,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration- Failed to connect to SFTP,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration- Failed to connect to SFTP,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration- Failed to connect to SFTP,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Lab Integration- Failed to connect to SFTP,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Abbott Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+account_webapp_stopped_aler,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,prestage-dps-account,App Service,microsoft.insights/activitylogalerts,Enabled
+account_webapp_stopped_aler,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,prod-dps-account,App Service,microsoft.insights/activitylogalerts,Enabled
+account_webapp_stopped_aler,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,stage-dps-account,App Service,microsoft.insights/activitylogalerts,Enabled
+account_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,dev-dps-account,App Service,microsoft.insights/activitylogalerts,Enabled
+account_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,pf-dps-account,App Service,microsoft.insights/activitylogalerts,Enabled
+account_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,qa-dps-account,App Service,microsoft.insights/activitylogalerts,Enabled
+alert for app configuration metrics,HttpIncomingRequestCount > 5000,Sev0,prd-fis-portal-eus-appcs,App Configuration,microsoft.insights/metricalerts,Enabled
+Alert for dev-dps-generic-report-web,exceptions/count >= 0,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/metricalerts,Enabled
+alert for event hub,ServerErrors >= 1 and 1 more condition,Sev0,prd-fis-portal-eus-evhns,Event Hubs Namespace,microsoft.insights/metricalerts,Enabled
+app services critical alerts,CpuTime > 45 and 3 more conditions,Sev3,prd-fis-portal-eus-app,App Service,microsoft.insights/metricalerts,Enabled
+App-Gatewaye Unhealthy Host,UnhealthyHostCount > 5,Sev3,dps-prod-appgw,Application gateway,microsoft.insights/metricalerts,Enabled
+AppHealth,Previous resource status=All%2C Current resource status=All,Sev4,disademo,App Service,microsoft.insights/activitylogalerts,Enabled
+Availability,Availability < 90,Sev3,cloudockitdisascreen,Storage account,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - avd-cc-0,Available Memory Bytes < 1000000000,Sev3,avd-cc-0,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-1,Available Memory Bytes < 1000000000,Sev3,AVD-CC-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-10,Available Memory Bytes < 1000000000,Sev3,AVD-CC-10,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-2,Available Memory Bytes < 1000000000,Sev3,AVD-CC-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-3,Available Memory Bytes < 1000000000,Sev3,AVD-CC-3,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-4,Available Memory Bytes < 1000000000,Sev3,AVD-CC-4,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-5,Available Memory Bytes < 1000000000,Sev3,AVD-CC-5,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-6,Available Memory Bytes < 1000000000,Sev3,AVD-CC-6,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-CC-7,Available Memory Bytes < 1000000000,Sev3,AVD-CC-7,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - AVD-Corp-0,Available Memory Bytes < 1000000000,Sev3,AVD-Corp-0,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - dev-textvm,Available Memory Bytes < 1000000000,Sev3,dev-textvm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - dps-dev-vm,Available Memory Bytes < 1000000000,Sev3,dps-dev-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - dps-life-vm,Available Memory Bytes < 1000000000,Sev3,dps-life-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - dps-prod-vm,Available Memory Bytes < 1000000000,Sev3,dps-prod-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - dps-test-vm,Available Memory Bytes < 1000000000,Sev3,dps-test-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - dps-test-vm,Available Memory Bytes < 1000000000,Sev3,dps-test-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Dev-App01,Available Memory Bytes < 1000000000,Sev3,HS-Dev-App01,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Dev-DB,Available Memory Bytes < 1000000000,Sev3,HS-Dev-DB,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Dev-Trainer,Available Memory Bytes < 1000000000,Sev3,HS-Dev-Trainer,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-App01-1,Available Memory Bytes < 1000000000,Sev3,HS-Prod-App01-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-App01-2,Available Memory Bytes < 1000000000,Sev3,HS-Prod-App01-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-App02-1,Available Memory Bytes < 1000000000,Sev3,HS-Prod-App02-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-App02-2,Available Memory Bytes < 1000000000,Sev3,HS-Prod-App02-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-DB,Available Memory Bytes < 1000000000,Sev3,HS-Prod-DB,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-DB2,Available Memory Bytes < 1000000000,Sev3,HS-Prod-DB2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-Trainer-1,Available Memory Bytes < 1000000000,Sev3,HS-Prod-Trainer-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - HS-Prod-Trainer-2,Available Memory Bytes < 1000000000,Sev3,HS-Prod-Trainer-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - LINUX-PRD,Available Memory Bytes < 1000000000,Sev3,LINUX-PRD,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - nonprod-dps-agent2,Available Memory Bytes < 1000000000,Sev3,nonprod-dps-agent2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - PR-MDP01-AZ1,Available Memory Bytes < 1000000000,Sev3,PR-MDP01-AZ1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - prd-alz-scrspk-eus-vm-01,Available Memory Bytes < 1000000000,Sev3,prd-alz-scrspk-eus-vm-01,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - prod-bast,Available Memory Bytes < 1000000000,Sev3,prod-bast,Virtual machine,microsoft.insights/metricalerts,Enabled
+Available Memory Bytes - prod-ssrs,Available Memory Bytes < 1000000000,Sev3,prod-ssrs,Virtual machine,microsoft.insights/metricalerts,Enabled
+blob_storage_health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,prestagedpslabint,All,microsoft.insights/activitylogalerts,Enabled
+blob_storage_health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,proddpslabint,All,microsoft.insights/activitylogalerts,Enabled
+blob_storage_health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,stagedpslabint,All,microsoft.insights/activitylogalerts,Enabled
+blob_storage_health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,devdpslabint,All,microsoft.insights/activitylogalerts,Enabled
+blob_storage_health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,pfdpslabint,All,microsoft.insights/activitylogalerts,Enabled
+blob_storage_health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,qadpslabint,All,microsoft.insights/activitylogalerts,Enabled
+cosmosdb resource health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,prestage-dps-utility-cosmos-account,All,microsoft.insights/activitylogalerts,Enabled
+cosmosdb resource health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,prod-dps-utility-cosmos-account,All,microsoft.insights/activitylogalerts,Enabled
+cosmosdb resource health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,stage-dps-utility-cosmos-account,All,microsoft.insights/activitylogalerts,Enabled
+cosmosdb resource health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,dev-dps-utility-cosmos-account,All,microsoft.insights/activitylogalerts,Enabled
+cosmosdb resource health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,pf-dps-utility-cosmos-account,All,microsoft.insights/activitylogalerts,Enabled
+cosmosdb resource health,Previous resource status=Unknown and 3 more %2C Current resource status=Unknown and 2 more ,Sev4,qa-dps-utility-cosmos-account,All,microsoft.insights/activitylogalerts,Enabled
+cosmosruscaledown,NormalizedRUConsumption < 50,Sev3,pf-dps-utility-cosmos-account,Azure Cosmos DB account,microsoft.insights/metricalerts,Enabled
+cosmosruscaleup,NormalizedRUConsumption > 70,Sev3,pf-dps-utility-cosmos-account,Azure Cosmos DB account,microsoft.insights/metricalerts,Enabled
+cpu percent,Percentage CPU > 80,Sev3,AVD-CC-9,Virtual machine,microsoft.insights/metricalerts,Enabled
+cpu percentage,cpu_percent > 90 and 1 more condition,Sev0,prd-fis-portal-eus-sql/fis-portal,SQL database,microsoft.insights/metricalerts,Enabled
+CPU TIME,CpuTime greater or less than dynamic threshold,Sev3,D360Members,App Service,microsoft.insights/metricalerts,Enabled
+Create Test Result Failed - 5xx error threshold breached,Table rows > 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+critical,Table rows > 80 ,Sev3,DECS-RAPIDLOG-01,Virtual machine,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Attachment Processor Failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Attachment Processor Failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Attachment Processor Failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Attachment Processor Failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Attachment Processor Failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Attachment Processor Failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Clock Letter Received Trigger failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Clock Letter Received Trigger failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Clock Letter Received Trigger failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Clock Letter Received Trigger failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Clock Letter Received Trigger failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Clock Letter Received Trigger failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result Failed - 5xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result Failed - 5xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result Failed - 5xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result Failed - 5xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result Failed - 5xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Create Test Result Failed - 5xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Edit Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO clock letter file to processed folder,Table rows >= 20 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO clock letter file to processed folder,Table rows >= 20 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO clock letter file to processed folder,Table rows >= 20 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO clock letter file to processed folder,Table rows >= 20 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO clock letter file to processed folder,Table rows >= 20 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO clock letter file to processed folder,Table rows >= 20 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO pending result file to processed folder,Table rows >= 5 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO pending result file to processed folder,Table rows >= 5 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO pending result file to processed folder,Table rows >= 5 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO pending result file to processed folder,Table rows >= 5 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO pending result file to processed folder,Table rows >= 5 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to copy MRO pending result file to processed folder,Table rows >= 5 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO non-reportable file to processed folder,Table rows >= 20 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO non-reportable file to processed folder,Table rows >= 20 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO non-reportable file to processed folder,Table rows >= 20 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO non-reportable file to processed folder,Table rows >= 20 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO non-reportable file to processed folder,Table rows >= 20 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO non-reportable file to processed folder,Table rows >= 20 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO safety letter file to processed folder,Table rows >= 20 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO safety letter file to processed folder,Table rows >= 20 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO safety letter file to processed folder,Table rows >= 20 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO safety letter file to processed folder,Table rows >= 20 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO safety letter file to processed folder,Table rows >= 20 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload  MRO safety letter file to processed folder,Table rows >= 20 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result ccf file to processed folder,Table rows >= 20 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result ccf file to processed folder,Table rows >= 20 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result ccf file to processed folder,Table rows >= 20 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result ccf file to processed folder,Table rows >= 20 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result ccf file to processed folder,Table rows >= 20 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result ccf file to processed folder,Table rows >= 20 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result certificate file to processed folder,Table rows >= 20 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result certificate file to processed folder,Table rows >= 20 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result certificate file to processed folder,Table rows >= 20 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result certificate file to processed folder,Table rows >= 20 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result certificate file to processed folder,Table rows >= 20 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result certificate file to processed folder,Table rows >= 20 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result file to processed folder,Table rows >= 20 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result file to processed folder,Table rows >= 20 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result file to processed folder,Table rows >= 20 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result file to processed folder,Table rows >= 20 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result file to processed folder,Table rows >= 20 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Failed to upload MRO Result file to processed folder,Table rows >= 20 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Identity Service Error - 5xx error threshold breached,Table rows >= 25 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Identity Service Error - 5xx error threshold breached,Table rows >= 25 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Identity Service Error - 5xx error threshold breached,Table rows >= 25 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Identity Service Error - 5xx error threshold breached,Table rows >= 25 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Identity Service Error - 5xx error threshold breached,Table rows >= 25 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Identity Service Error - 5xx error threshold breached,Table rows >= 25 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Invalid FileResult - 5xx error threshold breached,Table rows >= 50 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Invalid FileResult - 5xx error threshold breached,Table rows >= 50 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Invalid FileResult - 5xx error threshold breached,Table rows >= 50 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Invalid FileResult - 5xx error threshold breached,Table rows >= 50 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Invalid FileResult - 5xx error threshold breached,Table rows >= 50 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Invalid FileResult - 5xx error threshold breached,Table rows >= 50 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Pending Result Received Trigger Failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Pending Result Received Trigger Failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Pending Result Received Trigger Failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Pending Result Received Trigger Failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Pending Result Received Trigger Failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Pending Result Received Trigger Failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Result Received Trigger Failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Result Received Trigger Failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Result Received Trigger Failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Result Received Trigger Failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Result Received Trigger Failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-MRO Result Received Trigger Failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Non-Reportable Result Received Trigger failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Non-Reportable Result Received Trigger failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Non-Reportable Result Received Trigger failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Non-Reportable Result Received Trigger failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Non-Reportable Result Received Trigger failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Non-Reportable Result Received Trigger failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Persist Lab Form Failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Persist Lab Form Failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Persist Lab Form Failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Persist Lab Form Failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Persist Lab Form Failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Persist Lab Form Failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Generation Failed - 5xx error threshold breached,Table rows >= 75 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Generation Failed - 5xx error threshold breached,Table rows >= 75 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Generation Failed - 5xx error threshold breached,Table rows >= 75 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Generation Failed - 5xx error threshold breached,Table rows >= 75 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Generation Failed - 5xx error threshold breached,Table rows >= 75 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Generation Failed - 5xx error threshold breached,Table rows >= 75 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 50 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 50 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 50 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 50 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 50 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 50 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Validation Failed - 5xx error threshold breached,Table rows >= 50 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Validation Failed - 5xx error threshold breached,Table rows >= 50 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Validation Failed - 5xx error threshold breached,Table rows >= 50 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Validation Failed - 5xx error threshold breached,Table rows >= 50 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Validation Failed - 5xx error threshold breached,Table rows >= 50 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Report Validation Failed - 5xx error threshold breached,Table rows >= 50 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Safety Letter Received Trigger Failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Safety Letter Received Trigger Failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Safety Letter Received Trigger Failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Safety Letter Received Trigger Failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Safety Letter Received Trigger Failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Safety Letter Received Trigger Failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Search Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Test Result Certificate Report Processor failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Test Result Certificate Report Processor failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Test Result Certificate Report Processor failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Test Result Certificate Report Processor failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Test Result Certificate Report Processor failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-Test Result Certificate Report Processor failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessCompleted Event Function Failed,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessCompleted Event Function Failed,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessCompleted Event Function Failed,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessCompleted Event Function Failed,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessCompleted Event Function Failed,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessCompleted Event Function Failed,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessRequest Event Function Failed,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessRequest Event Function Failed,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessRequest Event Function Failed,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessRequest Event Function Failed,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessRequest Event Function Failed,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-TestResultProcessRequest Event Function Failed,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-ULR Processor Failed,Table rows >= 10 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-ULR Processor Failed,Table rows >= 10 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-ULR Processor Failed,Table rows >= 10 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-ULR Processor Failed,Table rows >= 10 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-ULR Processor Failed,Table rows >= 10 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-ULR Processor Failed,Table rows >= 10 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 4xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Critical-View Test Result - 5xx error threshold breached,Table rows >= 100 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL File Converter - Failed to transform or map the file to PULR,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is Missing from idx file,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is Missing from idx file,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is Missing from idx file,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is Missing from idx file,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is Missing from idx file,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is Missing from idx file,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is missing from Result File,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is missing from Result File,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is missing from Result File,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is missing from Result File,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is missing from Result File,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - AccessionCode is missing from Result File,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Failed to connect to SFTP,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Failed to connect to SFTP,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Failed to connect to SFTP,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Failed to connect to SFTP,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Failed to connect to SFTP,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Failed to connect to SFTP,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form File Exceeded the Size Limits,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form File Exceeded the Size Limits,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form File Exceeded the Size Limits,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form File Exceeded the Size Limits,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form name is Missing from idx file,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form name is Missing from idx file,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form name is Missing from idx file,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form name is Missing from idx file,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form name is Missing from idx file,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Form name is Missing from idx file,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Idx File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Idx File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Idx File Exceeded the Size Limits,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Idx File Exceeded the Size Limits,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Idx File Exceeded the Size Limits,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Idx File Exceeded the Size Limits,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+CRL Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Data Disk IOPS Consumed Percentage - avd-cc-0,Data Disk IOPS Consumed Percentage > 95,Sev3,avd-cc-0,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-1,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-10,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-10,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-2,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-3,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-3,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-4,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-4,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-5,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-5,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-6,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-6,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-CC-7,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-CC-7,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - AVD-Corp-0,Data Disk IOPS Consumed Percentage > 95,Sev3,AVD-Corp-0,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - dev-textvm,Data Disk IOPS Consumed Percentage > 95,Sev3,dev-textvm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - dps-dev-vm,Data Disk IOPS Consumed Percentage > 95,Sev3,dps-dev-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - dps-life-vm,Data Disk IOPS Consumed Percentage > 95,Sev3,dps-life-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - dps-prod-vm,Data Disk IOPS Consumed Percentage > 95,Sev3,dps-prod-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - dps-test-vm,Data Disk IOPS Consumed Percentage > 95,Sev3,dps-test-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - dps-test-vm,Data Disk IOPS Consumed Percentage > 95,Sev3,dps-test-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Dev-App01,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Dev-App01,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Dev-DB,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Dev-DB,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Dev-Trainer,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Dev-Trainer,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-App01-1,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-App01-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-App01-2,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-App01-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-App02-1,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-App02-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-App02-2,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-App02-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-DB,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-DB,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-DB2,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-DB2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-Trainer-1,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-Trainer-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - HS-Prod-Trainer-2,Data Disk IOPS Consumed Percentage > 95,Sev3,HS-Prod-Trainer-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - LINUX-PRD,Data Disk IOPS Consumed Percentage > 95,Sev3,LINUX-PRD,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - nonprod-dps-agent2,Data Disk IOPS Consumed Percentage > 95,Sev3,nonprod-dps-agent2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - PR-MDP01-AZ1,Data Disk IOPS Consumed Percentage > 95,Sev3,PR-MDP01-AZ1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - prd-alz-scrspk-eus-vm-01,Data Disk IOPS Consumed Percentage > 95,Sev3,prd-alz-scrspk-eus-vm-01,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - prod-bast,Data Disk IOPS Consumed Percentage > 95,Sev3,prod-bast,Virtual machine,microsoft.insights/metricalerts,Enabled
+Data Disk IOPS Consumed Percentage - prod-ssrs,Data Disk IOPS Consumed Percentage > 95,Sev3,prod-ssrs,Virtual machine,microsoft.insights/metricalerts,Enabled
+Deadletter_Alerts,DeadletteredMessages > 1,Sev4,prestage-dps-service-bus,Service Bus Namespace,microsoft.insights/metricalerts,Enabled
+Deadletter_Alerts,DeadletteredMessages > 1,Sev4,prod-dps-service-bus,Service Bus Namespace,microsoft.insights/metricalerts,Enabled
+Deadletter_Alerts,DeadletteredMessages > 1,Sev4,stage-dps-service-bus,Service Bus Namespace,microsoft.insights/metricalerts,Enabled
+Deadletter_Alerts,DeadletteredMessages > 1,Sev4,dev-dps-service-bus,Service Bus Namespace,microsoft.insights/metricalerts,Enabled
+Deadletter_Alerts,DeadletteredMessages > 1,Sev4,pf-dps-service-bus2,Service Bus Namespace,microsoft.insights/metricalerts,Enabled
+Deadletter_Alerts,DeadletteredMessages > 1,Sev4,qa-dps-service-bus,Service Bus Namespace,microsoft.insights/metricalerts,Enabled
+DecResourceHealth,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'DECS' ,All,microsoft.insights/activitylogalerts,Enabled
+dev-dps-account-AccountUpstreamDatasync-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-account-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-account-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-account-data-housekeeping-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-account-data-housekeeping,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-account-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-account,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-account-management-host-web-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-account-management-host-web,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-accountupstream-datasync-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-account-upstream-datasync,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-alert-service-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-alert-service,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-alert-service-host-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-alert-service-host-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-audit-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-audit,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-auditupstream-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-audit-upstream-datasync,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-bulk-request-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-bulk-request-service-plan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-bulk-request-management-host-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-bulk-request-management-host-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-bulk-request-management-host-web-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-bulk-request-management-host-web,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-bussinessyearend-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-program-renew-bybusiness-yearend,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-change-data-capture-monitor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-change-data-capture-monitor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-creationbypolicy-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-program-creation-bypolicy,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-data-housekeeping-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-data-housekeeping,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-domain-event-processor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-domain-event-processor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-donor-management-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-donor-management-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-donor-management-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-donor-management,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-employeeselection-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-program-selection,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-employeeselectionwarning-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-program-warning,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-generic-service-plan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-notification-transport-email,Table rows >= 5 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-generic-notification-transport-fax,Table rows >= 5 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-generic-notification-transport-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-notification-transport,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-notification-transport-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-notification-transport-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-notification-transport-print,Table rows >= 5 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-generic-report-idlerequestprocessor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-report-idlerequestprocessor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-report-messaging-alert,Table rows >= 5 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-generic-report-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-report-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-report-web-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-report-web,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-utility-bulkprocessor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-utility-bulkprocessor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-generic-utility-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-utility-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-identityproxy-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-identity-proxy,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-inbound-int-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-inbound-integration-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-inbound-int-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-inbound-int,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-lab-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-data-housekeeping-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-data-housekeeping,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-abbott-result-fileconverter-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-abbott-result-fileconverter,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-lab-integration-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-crl-result-fileconverter-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-lab-int-crl-result-fileconverter-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-crl-result-fileconverter,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-labcorp-result-fileconverter-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-labcorp-result-fileconverter,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-omega-result-fileconverter-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-lab-int-omega-result-fileconverter-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-omega-result-fileconverter,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-psychemedics-result-fileconverter-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-psychemedics-result-fileconverter,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-quest-result-fileconverter-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-lab-int-quest-result-fileconverter-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-quest-result-fileconverter,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-res-exch-abbott-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-res-exch-abbott,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-res-exch-crl-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-res-exch-crl,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-res-exch-labcorp-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-res-exch-labcorp,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-res-exch-omega-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-res-exch-omega,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-res-exch-psychemedics-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-res-exch-psychemedics,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-res-exch-quest-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-res-exch-quest,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-uni-lab-results-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-uni-lab-results,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-int-uni-lab-results-host-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-int-uni-lab-results-host-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-lab-upstream-datasync-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-labupstream-datasync-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-lab-upstream-datasync,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-notificationtransport-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-utility-notification-transport,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-occhealth-doc-gen-processor-alert,HealthCheckStatus < 100,Sev3,dev-dps-occhealth-doc-gen-processor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-occupational-health-api-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-occhealth-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-occupational-health-api-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-occupational-health-api,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-orchestrator-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-orchestrator,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-outbound-int-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-outbound-integration-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-outbound-int-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-outbound-int,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-outbound-int-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-outbound-integration-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-outbound-lab-account-int-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-outbound-lab-account-mock-api,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-outsystems-integration-service-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-outsystems-integration-services,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-processmonitor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-process-monitor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-programaudit-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-program-audit,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-purgeprocesslogs-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-purge-process-logs,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-report-data-housekeeping-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-report-data-housekeeping,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-report-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-report,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-report_datapurge-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-report-data-purge,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-reportdata-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-report-data-replication,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-roster-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-roster-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-roster-employeeSelection-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-roster-employeeSelectionWarning-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-roster-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-roster-management-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-management,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-roster-programCreationByPolicy-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-roster-programRenewByBussinessYearEnd-alert,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+dev-dps-rosterdatareplication-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-data-replication,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-test-result-management-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-test-result-management-serviceplan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-test-result-management-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-test-result-management,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-test-result-management-messaging-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-test-result-management-messaging,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-test-result-management-mro-intake-processor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-test-result-management-mro-intake-processor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-trm-driver-qualification-management-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-driver-qualification-management,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-trm-mass-action-processor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-test-result-management-mass-action-processor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-trm-rule-processor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-test-result-management-rule-processor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-trm-test-result-created-processor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-test-result-mgmt-testresult-created-processor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-upstreamdatasync-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-roster-upstream-datasync,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-utility-account-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-utility,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-utility-alerts,MemoryPercentage > 70 and 1 more condition,Sev3,dev-dps-utility-service-plan,App Service plan,microsoft.insights/metricalerts,Enabled
+dev-dps-utility-backgroundservices-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-utility-backgroundservices,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-utility-bulkprocessor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-utility-bulkprocessor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-utility-cosmosdb-monitor-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-utility-cosmosdb-monitor,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-utility-missingcommunicator-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-utility-missing-communicator,App Service,microsoft.insights/metricalerts,Enabled
+dev-dps-utilityupstream-healthcheck-alert,HealthCheckStatus < 100,Sev3,dev-dps-utility-upstream-datasync,App Service,microsoft.insights/metricalerts,Enabled
+dev_account_app_service_stopped,Category=Administrative%2C Operation name=Microsoft.Web/sites/stop/Action,Sev4,dev-dps-account,App Service,microsoft.insights/activitylogalerts,Enabled
+dev_lab_app_service_stopped,Category=Administrative%2C Operation name=Microsoft.Web/sites/stop/Action,Sev4,dev-dps-lab,App Service,microsoft.insights/activitylogalerts,Enabled
+DISA AVD Service Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'DISA AVD' ,All,microsoft.insights/activitylogalerts,Enabled
+disascreeai-server errors,HealthCheckStatus < 100,Sev3,disascreen-ai,App Service,microsoft.insights/metricalerts,Enabled
+DISAScreen-DevOps-ResourceHealth,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'DISAScreen-DevOps-Subscription' ,All,microsoft.insights/activitylogalerts,Enabled
+DISAScreen-PRD-KV-Alert,ServiceApiHit > 6000,Sev3,DISAScreen-PRD-Logins-KV,Key vault,microsoft.insights/metricalerts,Enabled
+DISAScreen-PRD-Subscription-ResourceHealth,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'DISAScreen-PRD-Subscription' ,All,microsoft.insights/activitylogalerts,Enabled
+DISAWorks Platform Lower ResourceHealth,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'DISAWorks Platform Lower' ,All,microsoft.insights/activitylogalerts,Enabled
+DISAWorks Platform Pegasus Team Resource Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'DISAWorks Platform Pegasus Team' ,All,microsoft.insights/activitylogalerts,Enabled
+DISAWorks Platform Upper Resource Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'DISAWorks Platform Upper' ,All,microsoft.insights/activitylogalerts,Enabled
+DTU,dtu_consumption_percent > 1,Sev0,dev-dps-lab-sql-server/dev-dps-lab-elastic-pool,SQL elastic pool,microsoft.insights/metricalerts,Enabled
+DXML Transformer - Auth (n z) Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+DXML Transformer - Auth (n z) Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+DXML Transformer - Storing DXML Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+DXML Transformer - Storing DXML Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Alcohol TestResult Created Function Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Alcohol TestResult Created Function Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Alcohol TestResult Created Function Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Alcohol TestResult Created Function Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Alcohol TestResult Created Function Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Alcohol TestResult Created Function Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Attachment Processor Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Attachment Processor Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Attachment Processor Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Attachment Processor Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Attachment Processor Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Attachment Processor Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Clock Letter Received Trigger failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Clock Letter Received Trigger failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Clock Letter Received Trigger failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Clock Letter Received Trigger failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Clock Letter Received Trigger failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Clock Letter Received Trigger failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result - 4xx error threshold breached,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result - 4xx error threshold breached,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result - 4xx error threshold breached,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result - 4xx error threshold breached,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result - 4xx error threshold breached,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result - 4xx error threshold breached,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result Failed - 5xx error threshold breached,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result Failed - 5xx error threshold breached,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result Failed - 5xx error threshold breached,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result Failed - 5xx error threshold breached,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result Failed - 5xx error threshold breached,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Create Test Result Failed - 5xx error threshold breached,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Download Attachment Failed,Table rows >= 20 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Download Attachment Failed,Table rows >= 20 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Download Attachment Failed,Table rows >= 20 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Download Attachment Failed,Table rows >= 20 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Download Attachment Failed,Table rows >= 20 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Download Attachment Failed,Table rows >= 20 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Edit Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO clock letter file to processed folder,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO clock letter file to processed folder,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO clock letter file to processed folder,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO clock letter file to processed folder,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO clock letter file to processed folder,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO clock letter file to processed folder,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO pending result file to processed folder,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO pending result file to processed folder,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO pending result file to processed folder,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO pending result file to processed folder,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO pending result file to processed folder,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to copy MRO pending result file to processed folder,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO non-reportable file to processed folder,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO non-reportable file to processed folder,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO non-reportable file to processed folder,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO non-reportable file to processed folder,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO non-reportable file to processed folder,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO non-reportable file to processed folder,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result ccf file to processed folder,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result ccf file to processed folder,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result ccf file to processed folder,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result ccf file to processed folder,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result ccf file to processed folder,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result ccf file to processed folder,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result certificate file to processed folder,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result certificate file to processed folder,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result certificate file to processed folder,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result certificate file to processed folder,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result certificate file to processed folder,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result certificate file to processed folder,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result file to processed folder,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result file to processed folder,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result file to processed folder,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result file to processed folder,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result file to processed folder,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO Result file to processed folder,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO safety letter file to processed folder,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO safety letter file to processed folder,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO safety letter file to processed folder,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO safety letter file to processed folder,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO safety letter file to processed folder,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Failed to upload MRO safety letter file to processed folder,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Identity Service Error - 5xx error threshold breached,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Identity Service Error - 5xx error threshold breached,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Identity Service Error - 5xx error threshold breached,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Identity Service Error - 5xx error threshold breached,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Identity Service Error - 5xx error threshold breached,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Identity Service Error - 5xx error threshold breached,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Invalid FileResult - 5xx error threshold breached,Table rows >= 25 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Invalid FileResult - 5xx error threshold breached,Table rows >= 25 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Invalid FileResult - 5xx error threshold breached,Table rows >= 25 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Invalid FileResult - 5xx error threshold breached,Table rows >= 25 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Invalid FileResult - 5xx error threshold breached,Table rows >= 25 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Invalid FileResult - 5xx error threshold breached,Table rows >= 25 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Pending Result Received Trigger Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Pending Result Received Trigger Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Pending Result Received Trigger Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Pending Result Received Trigger Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Pending Result Received Trigger Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Pending Result Received Trigger Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Result Received Trigger Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Result Received Trigger Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Result Received Trigger Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Result Received Trigger Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Result Received Trigger Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-MRO Result Received Trigger Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Non-Reportable Result Received Trigger failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Non-Reportable Result Received Trigger failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Non-Reportable Result Received Trigger failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Non-Reportable Result Received Trigger failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Non-Reportable Result Received Trigger failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Non-Reportable Result Received Trigger failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Persist Lab Form Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Persist Lab Form Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Persist Lab Form Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Persist Lab Form Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Persist Lab Form Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Persist Lab Form Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Generation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Generation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Generation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Generation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Generation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Generation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 25 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 25 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 25 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 25 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 25 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Service Failed To Get Data - 5xx error threshold breached,Table rows >= 25 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Validation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Validation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Validation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Validation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Validation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Report Validation Failed - 5xx error threshold breached,Table rows >= 25 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Rerun Lab Test Matching Function Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Rerun Lab Test Matching Function Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Rerun Lab Test Matching Function Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Rerun Lab Test Matching Function Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Rerun Lab Test Matching Function Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Rerun Lab Test Matching Function Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Safety Letter Received Trigger Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Safety Letter Received Trigger Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Safety Letter Received Trigger Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Safety Letter Received Trigger Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Safety Letter Received Trigger Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Safety Letter Received Trigger Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Search Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TeleForm TestResult Created Function Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TeleForm TestResult Created Function Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TeleForm TestResult Created Function Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TeleForm TestResult Created Function Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TeleForm TestResult Created Function Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TeleForm TestResult Created Function Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Test Result Certificate Report Processor failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Test Result Certificate Report Processor failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Test Result Certificate Report Processor failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Test Result Certificate Report Processor failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Test Result Certificate Report Processor failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Test Result Certificate Report Processor failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultPersistedAfterProcessCompleted Function Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessCompleted Event Function Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessCompleted Event Function Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessCompleted Event Function Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessCompleted Event Function Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessCompleted Event Function Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessCompleted Event Function Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessRequest Event Function Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessRequest Event Function Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessRequest Event Function Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessRequest Event Function Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessRequest Event Function Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-TestResultProcessRequest Event Function Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-ULR Processor Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-ULR Processor Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-ULR Processor Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-ULR Processor Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-ULR Processor Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-ULR Processor Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Upload Attachment Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Upload Attachment Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Upload Attachment Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Upload Attachment Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Upload Attachment Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-Upload Attachment Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 4xx error threshold breached,Table rows >= 10 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Error-View Test Result - 5xx error threshold breached,Table rows >= 10 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Failed Certificate List,Table rows > 3 ,Sev1,DISAScreen-PRD-Logins-KV,Key vault,microsoft.insights/scheduledqueryrules,Enabled
+Failed Requests Over 5 mins,FailedRequests > 5,Sev3,dps-prod-appgw,Application gateway,microsoft.insights/metricalerts,Enabled
+Failure Anomalies - alerts-functionapp,Failure Anomalies detected,Sev3,alerts-functionapp,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - alertsnotification,Failure Anomalies detected,Sev3,alertsnotification,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - apim-policy-sample-function-app,Failure Anomalies detected,Sev3,apim-policy-sample-function-app,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - D360Members,Failure Anomalies detected,Sev3,d360members,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - datasynctestclient,Failure Anomalies detected,Sev3,datasynctestclient,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - deployment-slot-testing,Failure Anomalies detected,Sev3,deployment-slot-testing,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-alchemyeye-eus-func-ai,Failure Anomalies detected,Sev3,dev-d360-alchemyeye-eus-func-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-amzsnsapi-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-amzsnsapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-documentserver-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-documentserver-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-inex-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-inex-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-intranet-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-intranet-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-intranetsrv-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-intranetsrv-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-members-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-members-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-restsrvcorning-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-restsrvcorning-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-restsrvdrugalcoholtesting-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-restsrvdrugalcoholtesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-restsrvhankook-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-restsrvhankook-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-restsrvnfi-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-restsrvnfi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-restsrvpatterson-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-restsrvpatterson-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-restsrvscheduletesting-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-restsrvscheduletesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-restsrvtenstreetxchange-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-restsrvtenstreetxchange-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-scheduletesting-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-scheduletesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-scheduletestingsbx-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-scheduletestingsbx-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-tokenatorapi-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-tokenatorapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-d360-vip-eus-app-ai,Failure Anomalies detected,Sev3,dev-d360-vip-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-db-appingishts,Failure Anomalies detected,Sev3,dev-db-appingishts,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dgs-DISAScreen-Backend-WebApp-AppInsights,Failure Anomalies detected,Sev3,dev-dgs-disascreen-backend-webapp-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dgs-DISAScreen-Frontend-WebApp-AppInsights,Failure Anomalies detected,Sev3,dev-dgs-disascreen-frontend-webapp-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dps-app-insights,Failure Anomalies detected,Sev3,dev-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dps-generic-utility-bulkprocessor,Failure Anomalies detected,Sev3,dev-dps-generic-utility-bulkprocessor,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dps-lab,Failure Anomalies detected,Sev3,dev-dps-lab,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dps-lab-int-result-fileconverter-ome,Failure Anomalies detected,Sev3,dev-dps-lab-int-result-fileconverter-ome,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dps-lab-int-result-fileconverter-que,Failure Anomalies detected,Sev3,dev-dps-lab-int-result-fileconverter-que,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-dps-poc-appInsight,Failure Anomalies detected,Sev3,dev-dps-poc-appinsight,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-report-testing,Failure Anomalies detected,Sev3,dev-report-testing,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dev-us-eus-appinsights,Failure Anomalies detected,Sev3,dev-us-eus-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - disa-devops-automation,Failure Anomalies detected,Sev3,disa-devops-automation,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - disa-devops-automation,Failure Anomalies detected,Sev3,disa-devops-automation,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - disademo,Failure Anomalies detected,Sev3,disademo,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - DisaPlatformTestAppService,Failure Anomalies detected,Sev3,disaplatformtestappservice,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-dev-eastus-app-insights,Failure Anomalies detected,Sev3,dps-dev-eastus-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-dev-eastus-employee-selection-warnin,Failure Anomalies detected,Sev3,dps-dev-eastus-employee-selection-warnin,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-dev-poc,Failure Anomalies detected,Sev3,dps-dev-poc,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-dev-useast-account-servi202202081943,Failure Anomalies detected,Sev3,dps-dev-useast-account-servi202202081943,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-dev-useast-account-service,Failure Anomalies detected,Sev3,dps-dev-useast-account-service,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-dev-useast-client-service-test,Failure Anomalies detected,Sev3,dps-dev-useast-client-service-test,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-devops-eastus-prchecklist-automation,Failure Anomalies detected,Sev3,dps-devops-eastus-prchecklist-automation,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-faxplus-webhook,Failure Anomalies detected,Sev3,dps-faxplus-webhook,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dps-perf-eastus-appinsight,Failure Anomalies detected,Sev3,dps-perf-eastus-appinsight,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dsp-dev-useast-employee,Failure Anomalies detected,Sev3,dsp-dev-useast-employee,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dsp-dev-useast-report,Failure Anomalies detected,Sev3,dsp-dev-useast-report,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dsp-dev-useast-report-6,Failure Anomalies detected,Sev3,dsp-dev-useast-report-6,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-appinsights,Failure Anomalies detected,Sev3,dwm-dev-useast-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-central-configuration-ser,Failure Anomalies detected,Sev3,dwm-dev-useast-central-configuration-ser,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-employee-service,Failure Anomalies detected,Sev3,dwm-dev-useast-employee-service,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-function-docker,Failure Anomalies detected,Sev3,dwm-dev-useast-function-docker,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-identity-proxy-service,Failure Anomalies detected,Sev3,dwm-dev-useast-identity-proxy-service,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-notification-core-service,Failure Anomalies detected,Sev3,dwm-dev-useast-notification-core-service,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-policy-application-servic,Failure Anomalies detected,Sev3,dwm-dev-useast-policy-application-servic,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-policy-application-service,Failure Anomalies detected,Sev3,dwm-dev-useast-policy-application-service,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-dev-useast-random-service,Failure Anomalies detected,Sev3,dwm-dev-useast-random-service,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-qa-dev-appinsights,Failure Anomalies detected,Sev3,dwm-qa-dev-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-qa-useast-appinsights,Failure Anomalies detected,Sev3,dwm-qa-useast-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-qa-useast-appinsights,Failure Anomalies detected,Sev3,dwm-qa-useast-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - dwm-qa-useast-function,Failure Anomalies detected,Sev3,dwm-qa-useast-function,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - employee-selection-warning,Failure Anomalies detected,Sev3,employee-selection-warning,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - funtAppFORpoc,Failure Anomalies detected,Sev3,funtappforpoc,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - Glappinsight,Failure Anomalies detected,Sev3,glappinsight,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - httplogicappfortesting,Failure Anomalies detected,Sev3,httplogicappfortesting,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - identity-proxy-test,Failure Anomalies detected,Sev3,identity-proxy-test,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - mrologicapp,Failure Anomalies detected,Sev3,mrologicapp,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - pf-dps-account,Failure Anomalies detected,Sev3,pf-dps-account,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - pf-dps-app-insights,Failure Anomalies detected,Sev3,pf-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - pf-dps-report-data-purge-test,Failure Anomalies detected,Sev3,pf-dps-report-data-purge-test,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - poc-featureflag-app,Failure Anomalies detected,Sev3,poc-featureflag-app,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - POCBackgroundsApi,Failure Anomalies detected,Sev3,pocbackgroundsapi,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - POCBackgroundsDomainFunctions,Failure Anomalies detected,Sev3,pocbackgroundsdomainfunctions,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - POCEmailTest,Failure Anomalies detected,Sev3,pocemailtest,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-alchemyeye-eus-func-ai,Failure Anomalies detected,Sev3,prd-d360-alchemyeye-eus-func-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-alchemyeye-wus-func-ai,Failure Anomalies detected,Sev3,prd-d360-alchemyeye-wus-func-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-amzsnsapi-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-amzsnsapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-amzsnsapi-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-amzsnsapi-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-documentserver-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-documentserver-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-documentserver-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-documentserver-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-estesapi-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-estesapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-estesapi-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-estesapi-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-inex-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-inex-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-inex-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-inex-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-intranet-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-intranet-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-intranet-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-intranet-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-intranetsrv-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-intranetsrv-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-intranetsrv-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-intranetsrv-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-members-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-members-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-members-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-members-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvcorning-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvcorning-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvcorning-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvcorning-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvdrugalcoholtesting-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvdrugalcoholtesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvdrugalcoholtesting-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvdrugalcoholtesting-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvhankook-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvhankook-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvhankook-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvhankook-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvnfi-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvnfi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvnfi-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvnfi-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvpatterson-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvpatterson-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvpatterson-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvpatterson-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvscheduletesting-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvscheduletesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvscheduletesting-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvscheduletesting-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvtenstreetxchange-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvtenstreetxchange-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-restsrvtenstreetxchange-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-restsrvtenstreetxchange-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-scheduletesting-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-scheduletesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-scheduletesting-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-scheduletesting-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-scheduletestingsbx-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-scheduletestingsbx-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-scheduletestingsbx-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-scheduletestingsbx-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-tokenatorapi-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-tokenatorapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-tokenatorapi-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-tokenatorapi-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-vip-eus-app-ai,Failure Anomalies detected,Sev3,prd-d360-vip-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-d360-vip-wus-app-ai,Failure Anomalies detected,Sev3,prd-d360-vip-wus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-fis-eus-appinsights,Failure Anomalies detected,Sev3,prd-fis-eus-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prd-shrdsvcs-eus-appinsights,Failure Anomalies detected,Sev3,prd-shrdsvcs-eus-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - predev-dps-app-insights,Failure Anomalies detected,Sev3,predev-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prestage-dps-app-insights,Failure Anomalies detected,Sev3,prestage-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prod-dps-app-insights,Failure Anomalies detected,Sev3,prod-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - prometheus-integrations-dev-disa-tenant,Failure Anomalies detected,Sev3,prometheus-integrations-dev-disa-tenant,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - qa-dps-app-insights,Failure Anomalies detected,Sev3,qa-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - qa-dps-generic-utility-bulkprocessor,Failure Anomalies detected,Sev3,qa-dps-generic-utility-bulkprocessor,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - qa-dps-orchestrator,Failure Anomalies detected,Sev3,qa-dps-orchestrator,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - qa-dps-roster-purge-process-logs,Failure Anomalies detected,Sev3,qa-dps-roster-purge-process-logs,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - qa-dps-utility-backgroundservices,Failure Anomalies detected,Sev3,qa-dps-utility-backgroundservices,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - randomschedulingservice-functionapp,Failure Anomalies detected,Sev3,randomschedulingservice-functionapp,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - rostersdev-testing,Failure Anomalies detected,Sev3,rostersdev-testing,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stage-dps-app-insights,Failure Anomalies detected,Sev3,stage-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-alchemyeye-eus-func-ai,Failure Anomalies detected,Sev3,stg-d360-alchemyeye-eus-func-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-amzsnsapi-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-amzsnsapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-documentserver-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-documentserver-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-estesapi-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-estesapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-inex-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-inex-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-intranet-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-intranet-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-intranetsrv-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-intranetsrv-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-members-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-members-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-restsrvcorning-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-restsrvcorning-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-restsrvdrugalcoholtesting-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-restsrvdrugalcoholtesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-restsrvhankook-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-restsrvhankook-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-restsrvnfi-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-restsrvnfi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-restsrvpatterson-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-restsrvpatterson-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-restsrvscheduletesting-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-restsrvscheduletesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-restsrvtenstreetxchange-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-restsrvtenstreetxchange-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-scheduletesting-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-scheduletesting-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-scheduletestingsbx-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-scheduletestingsbx-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-tokenatorapi-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-tokenatorapi-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-d360-vip-eus-app-ai,Failure Anomalies detected,Sev3,stg-d360-vip-eus-app-ai,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-dgs-DISAScreen-Backend-WebApp-AppInsights,Failure Anomalies detected,Sev3,stg-dgs-disascreen-backend-webapp-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-dgs-DISAScreen-Frontend-WebApp-AppInsights,Failure Anomalies detected,Sev3,stg-dgs-disascreen-frontend-webapp-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-fis-eus-appinsights,Failure Anomalies detected,Sev3,stg-fis-eus-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - stg-shrdsvcs-eus-appinsights,Failure Anomalies detected,Sev3,stg-shrdsvcs-eus-appinsights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - test-windows-smtp,Failure Anomalies detected,Sev3,test-windows-smtp,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - testing-dasbhoard-update-dps-app-insights,Failure Anomalies detected,Sev3,testing-dasbhoard-update-dps-app-insights,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - TestingAPPRoster,Failure Anomalies detected,Sev3,testingapproster,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - TransQSearch,Failure Anomalies detected,Sev3,transqsearch,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - web-app-configuration-test,Failure Anomalies detected,Sev3,web-app-configuration-test,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Anomalies - windows-test,Failure Anomalies detected,Sev3,windows-test,Application Insights,microsoft.alertsmanagement/smartdetectoralertrules,Enabled
+Failure Probe,DipAvailability < 100,Sev3,Hyperscience_Prod_SQL_LoadBalancer,Load balancer,microsoft.insights/metricalerts,Enabled
+Form Persister - Auth (n z) Failed,Table rows >= 1 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Form Persister - Auth (n z) Failed,Table rows >= 1 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Form Persister - Storing Form File Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Form Persister - Storing Form File Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+generic-report-alert,HealthCheckStatus < 100,Sev3,dev-dps-generic-report-web,App Service,microsoft.insights/metricalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'Purview Environment' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Availability < 90,Sev2,clouddockitdisascreenprd,Storage account,microsoft.insights/metricalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,DISAScreen-PRD-Prometheus,App Service,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'prd-datalake-sub' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'prd-dgs-arc-sub' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'prd-disa-conn-sub' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'prd-shrdsvcs-sub' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'MDP Prod' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'OutSystems Lower' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'prd-fis-sub' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'prd-disa-idnt-sub' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'Thales Environment Subscription' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'prd-disa-mgmt-sub' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,dem-server,Virtual machine,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'Outsystems Upper' ,All,microsoft.insights/activitylogalerts,Enabled
+Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'UCP-DevOps-Subscription' ,All,microsoft.insights/activitylogalerts,Enabled
+Hosted Marketing Websites  Resource Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'Hosted Marketing Websites' ,All,microsoft.insights/activitylogalerts,Enabled
+HyperScience  Resource Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'HyperScience' ,All,microsoft.insights/activitylogalerts,Enabled
+IntegrationGateway-PRD-Subscription  Resource Health,Previous resource status=All%2C Current resource status=All,Sev4,All resources in 'IntegrationGateway-PRD-Subscription' ,All,microsoft.insights/activitylogalerts,Enabled
+key vault metrics alerts,Availability < 95 and 3 more conditions,Sev0,prd-fis-portal-eus-kv,Key vault,microsoft.insights/metricalerts,Enabled
+Keyvault hits,ServiceApiHit > 6000,Sev3,kv-mdp-prod-eastus,Key vault,microsoft.insights/metricalerts,Enabled
+KeyVault Logs,Availability > 80,Sev3,UCP-PRD-Credentials-KV,Key vault,microsoft.insights/metricalerts,Enabled
+KeyVault-Alerts,ServiceApiHit > 6000,Sev2,UCP-PRD-Credentials-KV,Key vault,microsoft.insights/metricalerts,Enabled
+KeyVault-Security-Alerts,Table rows > 0 ,Sev3,UCP-PRD-Credentials-KV,Key vault,microsoft.insights/scheduledqueryrules,Enabled
+KeyVault-Security-Alerts,Table rows > 0 ,Sev3,prd-alz-infraops-eus-kv,Key vault,microsoft.insights/scheduledqueryrules,Enabled
+KeyVault-Security-Alerts,Table rows > 0 ,Sev3,pf-dps-keyvault,Key vault,microsoft.insights/scheduledqueryrules,Enabled
+KV Hits,ServiceApiHit > 6000,Sev3,kv-mdp-shared-eastus,Key vault,microsoft.insights/metricalerts,Enabled
+lab_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,prestage-dps-lab,App Service,microsoft.insights/activitylogalerts,Enabled
+lab_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,prod-dps-lab,App Service,microsoft.insights/activitylogalerts,Enabled
+lab_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,stage-dps-lab,App Service,microsoft.insights/activitylogalerts,Enabled
+lab_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,pf-dps-lab,App Service,microsoft.insights/activitylogalerts,Enabled
+lab_webapp_stopped_alert,Category=Administrative%2C Operation name=microsoft.web/sites/stop/Action,Sev4,qa-dps-lab,App Service,microsoft.insights/activitylogalerts,Enabled
+LabCorp Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - AccessionCode is Missing from Result File,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Invalid Result File,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration - Result File Exceeded the Size Limits,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration- Failed to connect to SFTP,Table rows >= 12 ,Sev0,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration- Failed to connect to SFTP,Table rows >= 12 ,Sev0,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration- Failed to connect to SFTP,Table rows >= 12 ,Sev0,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration- Failed to connect to SFTP,Table rows >= 12 ,Sev0,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration- Failed to connect to SFTP,Table rows >= 12 ,Sev0,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Lab Integration- Failed to connect to SFTP,Table rows >= 12 ,Sev0,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Labcorp Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Labcorp Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Labcorp Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Labcorp Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Labcorp Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+Labcorp Uniform Lab Result - Map PULR to ULR Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,prestage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,prod-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,stage-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,dev-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,pf-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+LabCorp Uniform Lab Result - Raw Result to PULR Failed,Table rows >= 1 ,Sev1,qa-dps-app-insights,Application Insights,microsoft.insights/scheduledqueryrules,Enabled
+memory_health_account,AverageMemoryWorkingSet > 30000000,Sev3,dev-dps-account-upstream-datasync,App Service,microsoft.insights/metricalerts,Enabled
+Missing Critical Updates,Table rows > 80 ,Sev0,AVD-CC-0,Virtual machine,microsoft.insights/scheduledqueryrules,Enabled
+Network In Total - avd-cc-0,Network In Total > 500000000000,Sev3,avd-cc-0,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-1,Network In Total > 500000000000,Sev3,AVD-CC-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-10,Network In Total > 500000000000,Sev3,AVD-CC-10,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-2,Network In Total > 500000000000,Sev3,AVD-CC-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-3,Network In Total > 500000000000,Sev3,AVD-CC-3,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-4,Network In Total > 500000000000,Sev3,AVD-CC-4,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-5,Network In Total > 500000000000,Sev3,AVD-CC-5,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-6,Network In Total > 500000000000,Sev3,AVD-CC-6,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-CC-7,Network In Total > 500000000000,Sev3,AVD-CC-7,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - AVD-Corp-0,Network In Total > 500000000000,Sev3,AVD-Corp-0,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - dev-textvm,Network In Total > 500000000000,Sev3,dev-textvm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - dps-dev-vm,Network In Total > 500000000000,Sev3,dps-dev-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - dps-life-vm,Network In Total > 500000000000,Sev3,dps-life-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - dps-prod-vm,Network In Total > 500000000000,Sev3,dps-prod-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - dps-test-vm,Network In Total > 500000000000,Sev3,dps-test-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - dps-test-vm,Network In Total > 500000000000,Sev3,dps-test-vm,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Dev-App01,Network In Total > 500000000000,Sev3,HS-Dev-App01,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Dev-DB,Network In Total > 500000000000,Sev3,HS-Dev-DB,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Dev-Trainer,Network In Total > 500000000000,Sev3,HS-Dev-Trainer,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-App01-1,Network In Total > 500000000000,Sev3,HS-Prod-App01-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-App01-2,Network In Total > 500000000000,Sev3,HS-Prod-App01-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-App02-1,Network In Total > 500000000000,Sev3,HS-Prod-App02-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-App02-2,Network In Total > 500000000000,Sev3,HS-Prod-App02-2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-DB,Network In Total > 500000000000,Sev3,HS-Prod-DB,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-DB2,Network In Total > 500000000000,Sev3,HS-Prod-DB2,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-Trainer-1,Network In Total > 500000000000,Sev3,HS-Prod-Trainer-1,Virtual machine,microsoft.insights/metricalerts,Enabled
+Network In Total - HS-Prod-Trainer-2,Network In Total > 500000000000,Sev3,HS-Prod-Trainer-2,Virtual machine,microsoft.insights/metricalerts,Enabled

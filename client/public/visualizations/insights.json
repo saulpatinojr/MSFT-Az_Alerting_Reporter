@@ -1,0 +1,46 @@
+{
+  "total_alerts": 1000,
+  "unique_alert_names": 492,
+  "severity_distribution": {
+    "Sev1": 376,
+    "Sev3": 359,
+    "Sev0": 206,
+    "Sev4": 57,
+    "Sev2": 2
+  },
+  "most_common_severity": "Sev1",
+  "resource_type_distribution": {
+    "Application Insights": 733,
+    "Virtual machine": 97,
+    "App Service": 96,
+    "All": 35,
+    "App Service plan": 12
+  },
+  "signal_type_distribution": {
+    "microsoft.insights/scheduledqueryrules": 580,
+    "microsoft.insights/metricalerts": 211,
+    "microsoft.alertsmanagement/smartdetectoralertrules": 158,
+    "microsoft.insights/activitylogalerts": 51
+  },
+  "environment_distribution": {
+    "Development": 280,
+    "Staging": 217,
+    "Production": 201,
+    "QA": 110,
+    "Performance": 106,
+    "Other": 86
+  },
+  "correlations": {
+    "severity_resource": 0.18165012797846852,
+    "severity_signal": -0.7839971434007572,
+    "resource_signal": 0.009587007310386423
+  },
+  "key_insights": [
+    "Most alerts are severity Sev1 (376 alerts, 37.6%)",
+    "Application Insights is the dominant resource type (733 alerts, 73.3%)",
+    "Scheduled Query Rules are the most common signal type (580 alerts, 58.0%)",
+    "Development environment has the highest alert count",
+    "Correlation between Severity and Resource Type: 0.182",
+    "Correlation between Severity and Signal Type: -0.784"
+  ]
+}
