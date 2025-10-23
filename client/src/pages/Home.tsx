@@ -46,11 +46,9 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="container py-6">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-primary/10 rounded-lg">
-              <Database className="w-8 h-8 text-primary" />
-            </div>
-            <div>
+          <div className="flex items-center gap-4">
+            <img src="/cbts-logo.svg" alt="CBTS Logo" className="h-12 w-auto" />
+            <div className="border-l border-border pl-4">
               <h1 className="text-3xl font-bold tracking-tight">Azure Monitor Analytics Dashboard</h1>
               <p className="text-muted-foreground">Comprehensive analysis of alert rules and correlations</p>
             </div>
