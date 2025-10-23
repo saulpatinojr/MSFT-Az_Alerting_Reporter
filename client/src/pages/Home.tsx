@@ -174,12 +174,180 @@ export default function Home() {
 
         {/* Visualizations Tabs */}
         <Tabs defaultValue="overview" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5">
             <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="severity">Severity Analysis</TabsTrigger>
             <TabsTrigger value="correlations">Correlations</TabsTrigger>
             <TabsTrigger value="distributions">Distributions</TabsTrigger>
             <TabsTrigger value="environment">Environment</TabsTrigger>
           </TabsList>
+
+          <TabsContent value="severity" className="space-y-6">
+            <Card className="border-orange-500/20 bg-orange-500/5">
+              <CardHeader>
+                <CardTitle>Most Common Alert Severities</CardTitle>
+                <CardDescription>Detailed breakdown of severity levels across all alert rules</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
+                      <div className="text-xs font-medium text-red-400 mb-1">Sev0 - Emergency</div>
+                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev0 || 0}</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        {(((insights.severity_distribution.Sev0 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
+                      </div>
+                    </div>
+                    <div className="p-4 bg-orange-500/10 border border-orange-500/20 rounded-lg">
+                      <div className="text-xs font-medium text-orange-400 mb-1">Sev1 - Critical</div>
+                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev1 || 0}</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        {(((insights.severity_distribution.Sev1 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
+                      </div>
+                      <Badge variant="destructive" className="mt-2 text-xs">Most Common</Badge>
+                    </div>
+                    <div className="p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+                      <div className="text-xs font-medium text-yellow-400 mb-1">Sev2 - Error</div>
+                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev2 || 0}</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        {(((insights.severity_distribution.Sev2 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
+                      </div>
+                    </div>
+                    <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
+                      <div className="text-xs font-medium text-blue-400 mb-1">Sev3 - Warning</div>
+                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev3 || 0}</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        {(((insights.severity_distribution.Sev3 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
+                      </div>
+                    </div>
+                    <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
+                      <div className="text-xs font-medium text-green-400 mb-1">Sev4 - Info</div>
+                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev4 || 0}</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        {(((insights.severity_distribution.Sev4 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle className="text-lg">Severity Distribution Chart</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <img
+                          src="/visualizations/severity_distribution.png"
+                          alt="Severity Distribution"
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </CardContent>
+                    </Card>
+
+                    <Card>
+                      <CardHeader>
+                        <CardTitle className="text-lg">Severity Rankings</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-4">
+                          {Object.entries(insights.severity_distribution)
+                            .sort((a, b) => b[1] - a[1])
+                            .map(([severity, count], index) => {
+                              const percentage = ((count / insights.total_alerts) * 100).toFixed(1);
+                              const severityColors: Record<string, string> = {
+                                Sev0: 'bg-red-500',
+                                Sev1: 'bg-orange-500',
+                                Sev2: 'bg-yellow-500',
+                                Sev3: 'bg-blue-500',
+                                Sev4: 'bg-green-500',
+                              };
+                              return (
+                                <div key={severity} className="space-y-2">
+                                  <div className="flex items-center justify-between text-sm">
+                                    <div className="flex items-center gap-2">
+                                      <span className="font-medium">#{index + 1}</span>
+                                      <Badge variant="outline">{severity}</Badge>
+                                    </div>
+                                    <div className="text-right">
+                                      <span className="font-bold">{count}</span>
+                                      <span className="text-muted-foreground ml-2">({percentage}%)</span>
+                                    </div>
+                                  </div>
+                                  <div className="w-full bg-muted rounded-full h-2">
+                                    <div
+                                      className={`h-2 rounded-full ${severityColors[severity]}`}
+                                      style={{ width: `${percentage}%` }}
+                                    ></div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-yellow-500/20 bg-yellow-500/5">
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <AlertCircle className="w-5 h-5 text-yellow-500" />
+                  <CardTitle>Temporal Distribution Analysis</CardTitle>
+                </div>
+                <CardDescription>Time-series analysis of severity trends</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="p-4 bg-muted/50 rounded-lg border border-yellow-500/20">
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <AlertCircle className="w-4 h-4 text-yellow-500" />
+                      Data Limitation Notice
+                    </h4>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      The current dataset does not contain temporal/time-based data such as creation dates, trigger
+                      timestamps, or modification dates. The analysis shows the <strong>static distribution</strong> of
+                      configured alert rules by severity level.
+                    </p>
+                    <div className="text-sm">
+                      <p className="font-medium mb-2">Available data fields:</p>
+                      <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                        <li>Name, Condition, Severity</li>
+                        <li>Target scope, Target resource type</li>
+                        <li>Signal type, Status</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
+                    <h4 className="font-semibold mb-2">To Enable Temporal Analysis</h4>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      To visualize how severities are distributed over time, you would need additional data:
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Alert creation/modification timestamps</li>
+                      <li>Alert trigger history with timestamps</li>
+                      <li>Time-series metrics of alert firing events</li>
+                      <li>Historical trend data from Azure Monitor</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
+                    <h4 className="font-semibold mb-2">Current Insights Available</h4>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      While temporal trends are not available, the dashboard provides comprehensive analysis of:
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Severity distribution across all alert rules</li>
+                      <li>Correlations between severity, resource types, and signal types</li>
+                      <li>Environment-based severity patterns</li>
+                      <li>Resource type and signal type distributions</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
 
           <TabsContent value="overview" className="space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
