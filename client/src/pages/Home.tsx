@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AlertCircle, TrendingUp, Activity, Database, Maximize2, Minimize2 } from "lucide-react";
+import ResourceTypes from "@/components/ResourceTypes";
 
 interface InsightsData {
   total_alerts: number;
@@ -21,8 +22,22 @@ interface InsightsData {
   key_insights: string[];
 }
 
+interface ResourceAnalysis {
+  categories: {
+    [category: string]: {
+      [resource: string]: number;
+    };
+  };
+  resource_severity: {
+    [resource: string]: {
+      [severity: string]: number;
+    };
+  };
+}
+
 export default function Home() {
   const [insights, setInsights] = useState<InsightsData | null>(null);
+  const [resourceData, setResourceData] = useState<ResourceAnalysis | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
@@ -30,6 +45,11 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => setInsights(data))
       .catch((err) => console.error("Failed to load insights:", err));
+
+    fetch("/resource_analysis.json")
+      .then((res) => res.json())
+      .then((data) => setResourceData(data))
+      .catch((err) => console.error("Failed to load resource data:", err));
   }, []);
 
   useEffect(() => {
@@ -210,13 +230,26 @@ export default function Home() {
 
         {/* Visualizations Tabs */}
         <Tabs defaultValue="overview" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6">
             <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="resources">Resource Types</TabsTrigger>
             <TabsTrigger value="severity">Severity Analysis</TabsTrigger>
             <TabsTrigger value="correlations">Correlations</TabsTrigger>
             <TabsTrigger value="distributions">Distributions</TabsTrigger>
             <TabsTrigger value="environment">Environment</TabsTrigger>
           </TabsList>
+
+          <TabsContent value="resources" className="space-y-6">
+            {resourceData ? (
+              <ResourceTypes data={resourceData} />
+            ) : (
+              <Card>
+                <CardContent className="py-8">
+                  <div className="text-center text-muted-foreground">Loading resource type data...</div>
+                </CardContent>
+              </Card>
+            )}
+          </TabsContent>
 
           <TabsContent value="severity" className="space-y-6">
             <Card className="border-orange-500/20 bg-orange-500/5">

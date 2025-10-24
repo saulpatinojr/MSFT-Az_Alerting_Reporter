@@ -1,0 +1,81 @@
+{
+  "categories": {
+    "Analytics": {
+      "Application Insights": 733
+    },
+    "Compute": {
+      "Virtual machine": 97
+    },
+    "App Services": {
+      "App Service": 96,
+      "App Service plan": 12
+    },
+    "Other": {
+      "All": 35
+    },
+    "Security": {
+      "Key vault": 10
+    },
+    "Integration": {
+      "Service Bus Namespace": 6,
+      "Event Hubs Namespace": 1
+    },
+    "Databases": {
+      "Azure Cosmos DB account": 2,
+      "SQL database": 1,
+      "SQL elastic pool": 1
+    },
+    "Storage": {
+      "Storage account": 2
+    },
+    "Networking": {
+      "Application gateway": 2,
+      "Load balancer": 1
+    },
+    "Configuration": {
+      "App Configuration": 1
+    }
+  },
+  "resource_severity": {
+    "Application Insights": {
+      "Sev1": 375,
+      "Sev0": 200,
+      "Sev3": 158
+    },
+    "Virtual machine": {
+      "Sev3": 95,
+      "Sev4": 1,
+      "Sev0": 1
+    },
+    "App Service": {
+      "Sev3": 81,
+      "Sev4": 15
+    },
+    "All": {
+      "Sev4": 35
+    },
+    "App Service plan": {
+      "Sev3": 12
+    },
+    "Key vault": {
+      "Sev3": 7,
+      "Sev1": 1,
+      "Sev0": 1,
+      "Sev2": 1
+    },
+    "Service Bus Namespace": {
+      "Sev4": 6
+    },
+    "Azure Cosmos DB account": {
+      "Sev3": 2
+    },
+    "Storage account": {
+      "Sev3": 1,
+      "Sev2": 1
+    },
+    "Application gateway": {
+      "Sev3": 2
+    }
+  },
+  "total_resources": 15
+}
