@@ -1,26 +1,14 @@
+import { useState } from "react";
+import { useLocation } from "wouter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useLocation } from "wouter";
-import { 
-  Server, 
-  Network, 
-  Database, 
-  HardDrive, 
-  BarChart3, 
-  Shield, 
-  Workflow,
-  Globe,
-  Settings,
-  Layers
-} from "lucide-react";
+import { AlertCircle, Database, Network, Shield, Zap, BarChart3, Settings, Package } from "lucide-react";
 
-interface ResourceCategory {
-  [resource: string]: number;
-}
-
-interface ResourceAnalysis {
+interface ResourceData {
   categories: {
-    [category: string]: ResourceCategory;
+    [category: string]: {
+      [resource: string]: number;
+    };
   };
   resource_severity: {
     [resource: string]: {
@@ -29,60 +17,77 @@ interface ResourceAnalysis {
   };
 }
 
-interface ResourceTypesProps {
-  data: ResourceAnalysis;
+interface ResourceCategory {
+  name: string;
+  description: string;
+  icon: React.ReactNode;
+  color: string;
+  resources: { [key: string]: number };
 }
 
-const categoryIcons: { [key: string]: any } = {
-  "Compute": Server,
-  "Networking": Network,
-  "Storage": HardDrive,
-  "Databases": Database,
-  "Analytics": BarChart3,
-  "Security": Shield,
-  "Integration": Workflow,
-  "App Services": Globe,
-  "Configuration": Settings,
-  "Other": Layers
-};
-
-const categoryDescriptions: { [key: string]: string } = {
-  "Compute": "Performance, health, and running processes for VM and VMSS",
-  "Networking": "Health and metrics for all deployed network resources",
-  "Storage": "Performance, capacity, and availability of storage accounts",
-  "Databases": "Performance, failures, capacity, and operational health",
-  "Analytics": "Monitor live applications - performance anomalies and user activity",
-  "Security": "Requests, failures, operations, and latency of Key Vaults",
-  "Integration": "Performance, connections, requests, and messages",
-  "App Services": "Web application monitoring and performance tracking",
-  "Configuration": "Configuration management and health monitoring",
-  "Other": "General monitoring and cross-resource alerts"
-};
-
-const categoryColors: { [key: string]: string } = {
-  "Compute": "from-blue-500/10 to-blue-600/5 border-blue-500/20",
-  "Networking": "from-purple-500/10 to-purple-600/5 border-purple-500/20",
-  "Storage": "from-green-500/10 to-green-600/5 border-green-500/20",
-  "Databases": "from-orange-500/10 to-orange-600/5 border-orange-500/20",
-  "Analytics": "from-cyan-500/10 to-cyan-600/5 border-cyan-500/20",
-  "Security": "from-red-500/10 to-red-600/5 border-red-500/20",
-  "Integration": "from-pink-500/10 to-pink-600/5 border-pink-500/20",
-  "App Services": "from-indigo-500/10 to-indigo-600/5 border-indigo-500/20",
-  "Configuration": "from-yellow-500/10 to-yellow-600/5 border-yellow-500/20",
-  "Other": "from-gray-500/10 to-gray-600/5 border-gray-500/20"
-};
-
-export default function ResourceTypes({ data }: ResourceTypesProps) {
+export default function ResourceTypes({ data }: { data: ResourceData }) {
   const [, setLocation] = useLocation();
-  
-  const sortedCategories = Object.entries(data.categories).sort((a, b) => {
-    const totalA = Object.values(a[1]).reduce((sum, val) => sum + val, 0);
-    const totalB = Object.values(b[1]).reduce((sum, val) => sum + val, 0);
-    return totalB - totalA;
-  });
+
+  const categoryConfig: { [key: string]: ResourceCategory } = {
+    compute: {
+      name: "Compute & Workloads",
+      description: "Virtual machines, app services, and container resources",
+      icon: <Zap className="w-5 h-5" />,
+      color: "bg-blue-500/10 border-blue-500/20",
+      resources: data.categories.compute || {},
+    },
+    networking: {
+      name: "Networking & Connectivity",
+      description: "Load balancers, gateways, and network infrastructure",
+      icon: <Network className="w-5 h-5" />,
+      color: "bg-purple-500/10 border-purple-500/20",
+      resources: data.categories.networking || {},
+    },
+    storage: {
+      name: "Storage & Data",
+      description: "Blob storage, file shares, and data repositories",
+      icon: <Database className="w-5 h-5" />,
+      color: "bg-green-500/10 border-green-500/20",
+      resources: data.categories.storage || {},
+    },
+    databases: {
+      name: "Databases & Caching",
+      description: "SQL databases, Cosmos DB, Redis, and data services",
+      icon: <BarChart3 className="w-5 h-5" />,
+      color: "bg-orange-500/10 border-orange-500/20",
+      resources: data.categories.databases || {},
+    },
+    analytics: {
+      name: "Analytics & Monitoring",
+      description: "Application Insights, Log Analytics, and monitoring tools",
+      icon: <BarChart3 className="w-5 h-5" />,
+      color: "bg-cyan-500/10 border-cyan-500/20",
+      resources: data.categories.analytics || {},
+    },
+    security: {
+      name: "Security & Compliance",
+      description: "Key Vault, security policies, and access management",
+      icon: <Shield className="w-5 h-5" />,
+      color: "bg-red-500/10 border-red-500/20",
+      resources: data.categories.security || {},
+    },
+    integration: {
+      name: "Integration & Messaging",
+      description: "Service Bus, Event Hubs, and message queues",
+      icon: <Package className="w-5 h-5" />,
+      color: "bg-indigo-500/10 border-indigo-500/20",
+      resources: data.categories.integration || {},
+    },
+    configuration: {
+      name: "Configuration & Management",
+      description: "App Configuration, automation, and settings",
+      icon: <Settings className="w-5 h-5" />,
+      color: "bg-slate-500/10 border-slate-500/20",
+      resources: data.categories.configuration || {},
+    },
+  };
 
   const handleResourceClick = (resource: string) => {
-    // Map resource names to routes
     const routeMap: { [key: string]: string } = {
       "Application Insights": "/resource/application-insights",
       "Virtual machine": "/resource/virtual-machines",
@@ -94,7 +99,7 @@ export default function ResourceTypes({ data }: ResourceTypesProps) {
       "Application gateway": "/resource/networking",
       "Load balancer": "/resource/networking",
     };
-    
+
     const route = routeMap[resource];
     if (route) {
       setLocation(route);
@@ -103,40 +108,52 @@ export default function ResourceTypes({ data }: ResourceTypesProps) {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {sortedCategories.map(([category, resources]) => {
-          const Icon = categoryIcons[category] || Layers;
-          const totalAlerts = Object.values(resources).reduce((sum, val) => sum + val, 0);
-          const colorClass = categoryColors[category] || categoryColors["Other"];
+      <div className="grid gap-6">
+        {Object.entries(categoryConfig).map(([key, category]) => {
+          const totalResources = Object.values(category.resources).reduce((sum, val) => sum + val, 0);
+          if (totalResources === 0) return null;
 
           return (
-            <Card key={category} className={`bg-gradient-to-br ${colorClass}`}>
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Icon className="w-5 h-5" />
-                    <CardTitle className="text-lg">{category}</CardTitle>
+            <Card key={key} className={`${category.color} border cursor-default`}>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1">{category.icon}</div>
+                    <div>
+                      <CardTitle className="text-lg">{category.name}</CardTitle>
+                      <CardDescription>{category.description}</CardDescription>
+                    </div>
                   </div>
-                  <Badge variant="secondary">{totalAlerts} alerts</Badge>
+                  <Badge variant="secondary" className="ml-2 flex-shrink-0">
+                    {totalResources} alerts
+                  </Badge>
                 </div>
-                <CardDescription className="text-xs">
-                  {categoryDescriptions[category] || "Resource monitoring and alerts"}
-                </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-2">
-                  {Object.entries(resources)
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {Object.entries(category.resources)
                     .sort((a, b) => b[1] - a[1])
-                    .map(([resource, count]) => (
-                      <div 
-                        key={resource} 
-                        className="flex items-center justify-between text-sm p-2 rounded hover:bg-muted/50 cursor-pointer transition-colors"
-                        onClick={() => handleResourceClick(resource)}
-                      >
-                        <span className="text-muted-foreground">{resource}</span>
-                        <span className="font-medium">{count}</span>
-                      </div>
-                    ))}
+                    .map(([resource, count]) => {
+                      const percentage = (count / totalResources) * 100;
+                      return (
+                        <div
+                          key={resource}
+                          onClick={() => handleResourceClick(resource)}
+                          className="p-3 rounded-lg bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all cursor-pointer group"
+                        >
+                          <div className="flex items-start justify-between gap-2 mb-2">
+                            <p className="font-medium text-sm group-hover:text-primary transition-colors">{resource}</p>
+                            <Badge variant="outline" className="text-xs flex-shrink-0">
+                              {count}
+                            </Badge>
+                          </div>
+                          <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                            <div className="bg-primary h-full" style={{ width: `${percentage}%` }} />
+                          </div>
+                          <p className="text-xs text-muted-foreground mt-1.5">{percentage.toFixed(0)}% of category</p>
+                        </div>
+                      );
+                    })}
                 </div>
               </CardContent>
             </Card>
@@ -144,69 +161,27 @@ export default function ResourceTypes({ data }: ResourceTypesProps) {
         })}
       </div>
 
-      {/* Detailed Resource Severity Breakdown */}
-      <Card>
+      <Card className="border-primary/20 bg-primary/5">
         <CardHeader>
-          <CardTitle>Resource Type Severity Breakdown</CardTitle>
-          <CardDescription>Alert severity distribution for top resource types</CardDescription>
+          <CardTitle className="text-base flex items-center gap-2">
+            <AlertCircle className="w-5 h-5" />
+            What Are These Resource Types?
+          </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="space-y-4">
-            {Object.entries(data.resource_severity).map(([resource, severities]) => {
-              const total = Object.values(severities).reduce((sum, val) => sum + val, 0);
-              return (
-                <div key={resource} className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="font-medium">{resource}</span>
-                    <span className="text-sm text-muted-foreground">{total} total alerts</span>
-                  </div>
-                  <div className="flex gap-1 h-2 rounded-full overflow-hidden bg-muted">
-                    {Object.entries(severities)
-                      .sort((a, b) => {
-                        const order = { Sev0: 0, Sev1: 1, Sev2: 2, Sev3: 3, Sev4: 4 };
-                        return (order[a[0] as keyof typeof order] || 5) - (order[b[0] as keyof typeof order] || 5);
-                      })
-                      .map(([severity, count]) => {
-                        const percentage = (count / total) * 100;
-                        const colors: { [key: string]: string } = {
-                          Sev0: "bg-red-500",
-                          Sev1: "bg-orange-500",
-                          Sev2: "bg-yellow-500",
-                          Sev3: "bg-blue-500",
-                          Sev4: "bg-green-500"
-                        };
-                        return (
-                          <div
-                            key={severity}
-                            className={colors[severity] || "bg-gray-500"}
-                            style={{ width: `${percentage}%` }}
-                            title={`${severity}: ${count} (${percentage.toFixed(1)}%)`}
-                          />
-                        );
-                      })}
-                  </div>
-                  <div className="flex gap-3 text-xs">
-                    {Object.entries(severities)
-                      .sort((a, b) => {
-                        const order = { Sev0: 0, Sev1: 1, Sev2: 2, Sev3: 3, Sev4: 4 };
-                        return (order[a[0] as keyof typeof order] || 5) - (order[b[0] as keyof typeof order] || 5);
-                      })
-                      .map(([severity, count]) => (
-                        <div key={severity} className="flex items-center gap-1">
-                          <Badge variant="outline" className="text-xs">
-                            {severity}
-                          </Badge>
-                          <span className="text-muted-foreground">{count}</span>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              );
-            })}
+          <div className="space-y-3 text-sm text-muted-foreground">
+            <p>
+              <strong>Resource Types</strong> are the different Azure services you use to run your applications and infrastructure. Each type serves a specific purpose and requires different monitoring approaches.
+            </p>
+            <p>
+              The numbers above show how many alert rules you have configured for each resource type. This helps you understand where your monitoring efforts are focused and ensures all critical services are properly watched.
+            </p>
+            <p>
+              <strong>Click on any resource card</strong> to see detailed monitoring information and metrics specific to that service type.
+            </p>
           </div>
         </CardContent>
       </Card>
     </div>
   );
 }
-

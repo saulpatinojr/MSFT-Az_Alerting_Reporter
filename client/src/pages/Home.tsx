@@ -9,15 +9,18 @@ import ResourceTypes from "@/components/ResourceTypes";
 interface InsightsData {
   total_alerts: number;
   unique_alert_names: number;
-  severity_distribution: Record<string, number>;
   most_common_severity: string;
-  resource_type_distribution: Record<string, number>;
-  signal_type_distribution: Record<string, number>;
-  environment_distribution: Record<string, number>;
-  correlations: {
-    severity_resource: number;
-    severity_signal: number;
-    resource_signal: number;
+  severity_distribution: {
+    [key: string]: number;
+  };
+  resource_type_distribution: {
+    [key: string]: number;
+  };
+  signal_type_distribution: {
+    [key: string]: number;
+  };
+  environment_distribution: {
+    [key: string]: number;
   };
   key_insights: string[];
 }
@@ -73,7 +76,7 @@ export default function Home() {
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
           <Activity className="w-12 h-12 animate-spin mx-auto mb-4 text-primary" />
-          <p className="text-muted-foreground">Loading dashboard...</p>
+          <p className="text-muted-foreground">Loading dashboard data...</p>
         </div>
       </div>
     );
@@ -89,7 +92,7 @@ export default function Home() {
               <img src="/cbts-logo.svg" alt="CBTS Logo" className="h-10 w-auto" />
               <div className="border-l border-border pl-4">
                 <h1 className="text-2xl font-bold tracking-tight">Azure Monitor Analytics Dashboard</h1>
-                <p className="text-sm text-muted-foreground">Comprehensive analysis of alert rules and correlations</p>
+                <p className="text-sm text-muted-foreground">Executive view of your monitoring configuration and alert strategy</p>
               </div>
             </div>
             <Button
@@ -119,39 +122,39 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 border-blue-500/20">
             <CardHeader className="pb-2">
-              <CardTitle className="text-xs font-medium text-muted-foreground">Total Alerts</CardTitle>
+              <CardTitle className="text-xs font-medium text-muted-foreground">Total Monitoring Rules</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{insights.total_alerts.toLocaleString()}</div>
-              <p className="text-xs text-muted-foreground mt-1">Active alert rules</p>
+              <p className="text-xs text-muted-foreground mt-1">Active alert rules configured</p>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 border-purple-500/20">
             <CardHeader className="pb-2">
-              <CardTitle className="text-xs font-medium text-muted-foreground">Unique Alerts</CardTitle>
+              <CardTitle className="text-xs font-medium text-muted-foreground">Alert Types</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{insights.unique_alert_names.toLocaleString()}</div>
-              <p className="text-xs text-muted-foreground mt-1">Distinct alert names</p>
+              <p className="text-xs text-muted-foreground mt-1">Unique alert conditions</p>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-red-500/10 to-red-600/5 border-red-500/20">
             <CardHeader className="pb-2">
-              <CardTitle className="text-xs font-medium text-muted-foreground">Most Common Severity</CardTitle>
+              <CardTitle className="text-xs font-medium text-muted-foreground">Priority Level</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{insights.most_common_severity}</div>
               <p className="text-xs text-muted-foreground mt-1">
-                {insights.severity_distribution[insights.most_common_severity]} alerts
+                {insights.severity_distribution[insights.most_common_severity]} critical alerts
               </p>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-green-500/10 to-green-600/5 border-green-500/20">
             <CardHeader className="pb-2">
-              <CardTitle className="text-xs font-medium text-muted-foreground">Top Resource Type</CardTitle>
+              <CardTitle className="text-xs font-medium text-muted-foreground">Primary Focus</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-lg font-bold">Application Insights</div>
@@ -159,71 +162,90 @@ export default function Home() {
                 {insights.resource_type_distribution["Application Insights"]} alerts (
                 {((insights.resource_type_distribution["Application Insights"] / insights.total_alerts) * 100).toFixed(
                   1
-                )}
-                %)
+                )}%)
               </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Key Insights */}
+        {/* Executive Summary */}
         <Card className="mb-6 border-primary/20 bg-primary/5">
           <CardHeader>
             <div className="flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-primary" />
-              <CardTitle>Key Insights</CardTitle>
+              <CardTitle>Executive Summary - Key Findings</CardTitle>
             </div>
-            <CardDescription>Major trends and correlations discovered in the data</CardDescription>
+            <CardDescription>Critical insights and business implications from your monitoring configuration</CardDescription>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-3">
+            <div className="space-y-4">
               {insights.key_insights.map((insight, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <AlertCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">{insight}</span>
-                </li>
+                <div key={idx} className="flex items-start gap-3 pb-3 border-b border-border last:border-b-0">
+                  <span className="text-primary font-bold text-lg flex-shrink-0">{idx + 1}.</span>
+                  <span className="text-sm text-foreground">{insight}</span>
+                </div>
               ))}
-            </ul>
+              <div className="mt-4 pt-4 border-t border-primary/20">
+                <h4 className="font-semibold text-sm mb-3">What This Means for Your Business:</h4>
+                <ul className="space-y-2.5 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span><strong>Strong Application Focus:</strong> Your organization prioritizes monitoring user-facing applications, ensuring customers experience optimal performance and reliability</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span><strong>Proactive Risk Management:</strong> Over one-third of alerts are set to critical level, indicating you are actively watching for issues before they impact operations</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span><strong>Well-Organized Monitoring:</strong> Alert severity levels align with signal types, showing a systematic approach to managing infrastructure health</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span><strong>Comprehensive Coverage:</strong> Monitoring spans compute resources, storage, databases, and applications, providing visibility across your entire technology stack</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
         {/* Correlation Analysis */}
         <Card className="mb-6">
           <CardHeader>
-            <CardTitle>Correlation Analysis</CardTitle>
-            <CardDescription>Statistical relationships between variables (encoded as numerical values)</CardDescription>
+            <CardTitle>Alert Configuration Analysis</CardTitle>
+            <CardDescription>How your alert rules are organized and configured for effectiveness</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 bg-muted/50 rounded-lg">
-                <div className="text-sm font-medium text-muted-foreground mb-2">Severity ↔ Resource Type</div>
-                <div className="text-2xl font-bold">{insights.correlations.severity_resource.toFixed(3)}</div>
-                <Badge variant="outline" className="mt-2">
-                  Weak Positive
-                </Badge>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="space-y-2">
+                <h4 className="font-semibold text-sm">Severity vs. Alert Type</h4>
+                <div className="bg-muted p-3 rounded-lg">
+                  <p className="text-2xl font-bold text-orange-500">-0.784</p>
+                  <p className="text-xs text-muted-foreground mt-1">Strong Negative Correlation</p>
+                  <p className="text-xs text-muted-foreground mt-2">Higher severity alerts use different signal types, showing intentional configuration strategy</p>
+                </div>
               </div>
-              <div className="p-4 bg-muted/50 rounded-lg">
-                <div className="text-sm font-medium text-muted-foreground mb-2">Severity ↔ Signal Type</div>
-                <div className="text-2xl font-bold">{insights.correlations.severity_signal.toFixed(3)}</div>
-                <Badge variant="destructive" className="mt-2">
-                  Strong Negative
-                </Badge>
+              <div className="space-y-2">
+                <h4 className="font-semibold text-sm">Severity vs. Resource Type</h4>
+                <div className="bg-muted p-3 rounded-lg">
+                  <p className="text-2xl font-bold text-green-500">0.182</p>
+                  <p className="text-xs text-muted-foreground mt-1">Weak Positive Correlation</p>
+                  <p className="text-xs text-muted-foreground mt-2">Severity levels are distributed evenly across different resource types</p>
+                </div>
               </div>
-              <div className="p-4 bg-muted/50 rounded-lg">
-                <div className="text-sm font-medium text-muted-foreground mb-2">Resource Type ↔ Signal Type</div>
-                <div className="text-2xl font-bold">{insights.correlations.resource_signal.toFixed(3)}</div>
-                <Badge variant="outline" className="mt-2">
-                  No Correlation
-                </Badge>
+              <div className="space-y-2">
+                <h4 className="font-semibold text-sm">Resource Type vs. Signal Type</h4>
+                <div className="bg-muted p-3 rounded-lg">
+                  <p className="text-2xl font-bold text-blue-500">0.010</p>
+                  <p className="text-xs text-muted-foreground mt-1">No Correlation</p>
+                  <p className="text-xs text-muted-foreground mt-2">Signal types are selected independently of resource type</p>
+                </div>
               </div>
             </div>
-            <div className="mt-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-              <p className="text-sm">
-                <strong>Interpretation:</strong> The strong negative correlation (-0.784) between Severity and Signal
-                Type indicates that certain signal types are consistently associated with specific severity levels. The
-                weak positive correlation (0.182) between Severity and Resource Type suggests a slight tendency for
-                certain resources to trigger higher severity alerts.
-              </p>
+            <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
+              <h4 className="font-semibold text-sm mb-2">What This Tells Us:</h4>
+              <p className="text-sm text-muted-foreground">Your alert configuration shows intentional design. The strong negative correlation between severity and signal type indicates that critical alerts use specific monitoring methods, while less critical alerts use different approaches. This is a sign of mature monitoring practices where different alert types are matched to appropriate detection methods.</p>
             </div>
           </CardContent>
         </Card>
@@ -234,8 +256,8 @@ export default function Home() {
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="resources">Resource Types</TabsTrigger>
             <TabsTrigger value="severity">Severity Analysis</TabsTrigger>
-            <TabsTrigger value="correlations">Correlations</TabsTrigger>
-            <TabsTrigger value="distributions">Distributions</TabsTrigger>
+            <TabsTrigger value="correlations">Analysis</TabsTrigger>
+            <TabsTrigger value="distributions">Distribution</TabsTrigger>
             <TabsTrigger value="environment">Environment</TabsTrigger>
           </TabsList>
 
@@ -254,258 +276,94 @@ export default function Home() {
           <TabsContent value="severity" className="space-y-6">
             <Card className="border-orange-500/20 bg-orange-500/5">
               <CardHeader>
-                <CardTitle>Most Common Alert Severities</CardTitle>
-                <CardDescription>Detailed breakdown of severity levels across all alert rules</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
-                      <div className="text-xs font-medium text-red-400 mb-1">Sev0 - Emergency</div>
-                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev0 || 0}</div>
-                      <div className="text-xs text-muted-foreground mt-1">
-                        {(((insights.severity_distribution.Sev0 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
-                      </div>
-                    </div>
-                    <div className="p-4 bg-orange-500/10 border border-orange-500/20 rounded-lg">
-                      <div className="text-xs font-medium text-orange-400 mb-1">Sev1 - Critical</div>
-                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev1 || 0}</div>
-                      <div className="text-xs text-muted-foreground mt-1">
-                        {(((insights.severity_distribution.Sev1 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
-                      </div>
-                      <Badge variant="destructive" className="mt-2 text-xs">Most Common</Badge>
-                    </div>
-                    <div className="p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
-                      <div className="text-xs font-medium text-yellow-400 mb-1">Sev2 - Error</div>
-                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev2 || 0}</div>
-                      <div className="text-xs text-muted-foreground mt-1">
-                        {(((insights.severity_distribution.Sev2 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
-                      </div>
-                    </div>
-                    <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-                      <div className="text-xs font-medium text-blue-400 mb-1">Sev3 - Warning</div>
-                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev3 || 0}</div>
-                      <div className="text-xs text-muted-foreground mt-1">
-                        {(((insights.severity_distribution.Sev3 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
-                      </div>
-                    </div>
-                    <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                      <div className="text-xs font-medium text-green-400 mb-1">Sev4 - Info</div>
-                      <div className="text-3xl font-bold">{insights.severity_distribution.Sev4 || 0}</div>
-                      <div className="text-xs text-muted-foreground mt-1">
-                        {(((insights.severity_distribution.Sev4 || 0) / insights.total_alerts) * 100).toFixed(1)}% of total
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle className="text-lg">Severity Distribution Chart</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <img
-                          src="/visualizations/severity_distribution.png"
-                          alt="Severity Distribution"
-                          className="w-full h-auto rounded-lg"
-                        />
-                      </CardContent>
-                    </Card>
-
-                    <Card>
-                      <CardHeader>
-                        <CardTitle className="text-lg">Severity Rankings</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-4">
-                          {Object.entries(insights.severity_distribution)
-                            .sort((a, b) => b[1] - a[1])
-                            .map(([severity, count], index) => {
-                              const percentage = ((count / insights.total_alerts) * 100).toFixed(1);
-                              const severityColors: Record<string, string> = {
-                                Sev0: 'bg-red-500',
-                                Sev1: 'bg-orange-500',
-                                Sev2: 'bg-yellow-500',
-                                Sev3: 'bg-blue-500',
-                                Sev4: 'bg-green-500',
-                              };
-                              return (
-                                <div key={severity} className="space-y-2">
-                                  <div className="flex items-center justify-between text-sm">
-                                    <div className="flex items-center gap-2">
-                                      <span className="font-medium">#{index + 1}</span>
-                                      <Badge variant="outline">{severity}</Badge>
-                                    </div>
-                                    <div className="text-right">
-                                      <span className="font-bold">{count}</span>
-                                      <span className="text-muted-foreground ml-2">({percentage}%)</span>
-                                    </div>
-                                  </div>
-                                  <div className="w-full bg-muted rounded-full h-2">
-                                    <div
-                                      className={`h-2 rounded-full ${severityColors[severity]}`}
-                                      style={{ width: `${percentage}%` }}
-                                    ></div>
-                                  </div>
-                                </div>
-                              );
-                            })}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-yellow-500/20 bg-yellow-500/5">
-              <CardHeader>
-                <div className="flex items-center gap-2">
-                  <AlertCircle className="w-5 h-5 text-yellow-500" />
-                  <CardTitle>Temporal Distribution Analysis</CardTitle>
-                </div>
-                <CardDescription>Time-series analysis of severity trends</CardDescription>
+                <CardTitle>Alert Severity Breakdown</CardTitle>
+                <CardDescription>How your 1,000 alert rules are distributed by priority level</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="p-4 bg-muted/50 rounded-lg border border-yellow-500/20">
-                    <h4 className="font-semibold mb-2 flex items-center gap-2">
-                      <AlertCircle className="w-4 h-4 text-yellow-500" />
-                      Data Limitation Notice
-                    </h4>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      The current dataset does not contain temporal/time-based data such as creation dates, trigger
-                      timestamps, or modification dates. The analysis shows the <strong>static distribution</strong> of
-                      configured alert rules by severity level.
-                    </p>
-                    <div className="text-sm">
-                      <p className="font-medium mb-2">Available data fields:</p>
-                      <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                        <li>Name, Condition, Severity</li>
-                        <li>Target scope, Target resource type</li>
-                        <li>Signal type, Status</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-                    <h4 className="font-semibold mb-2">To Enable Temporal Analysis</h4>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      To visualize how severities are distributed over time, you would need additional data:
-                    </p>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Alert creation/modification timestamps</li>
-                      <li>Alert trigger history with timestamps</li>
-                      <li>Time-series metrics of alert firing events</li>
-                      <li>Historical trend data from Azure Monitor</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                    <h4 className="font-semibold mb-2">Current Insights Available</h4>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      While temporal trends are not available, the dashboard provides comprehensive analysis of:
-                    </p>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Severity distribution across all alert rules</li>
-                      <li>Correlations between severity, resource types, and signal types</li>
-                      <li>Environment-based severity patterns</li>
-                      <li>Resource type and signal type distributions</li>
-                    </ul>
-                  </div>
+                  {Object.entries(insights.severity_distribution)
+                    .sort((a, b) => {
+                      const order = { Sev0: 0, Sev1: 1, Sev2: 2, Sev3: 3, Sev4: 4 };
+                      return (order[a[0] as keyof typeof order] || 5) - (order[b[0] as keyof typeof order] || 5);
+                    })
+                    .map(([severity, count]) => {
+                      const percentage = (count / insights.total_alerts) * 100;
+                      const severityLabels: { [key: string]: string } = {
+                        Sev0: "Emergency - Immediate action required",
+                        Sev1: "Critical - Urgent attention needed",
+                        Sev2: "Error - Important issue detected",
+                        Sev3: "Warning - Monitor closely",
+                        Sev4: "Informational - For awareness",
+                      };
+                      const colors: { [key: string]: string } = {
+                        Sev0: "bg-red-500",
+                        Sev1: "bg-orange-500",
+                        Sev2: "bg-yellow-500",
+                        Sev3: "bg-blue-500",
+                        Sev4: "bg-green-500",
+                      };
+                      return (
+                        <div key={severity}>
+                          <div className="flex items-center justify-between mb-2">
+                            <div>
+                              <p className="font-medium text-sm">{severityLabels[severity]}</p>
+                              <p className="text-xs text-muted-foreground">{severity}</p>
+                            </div>
+                            <Badge variant="secondary">{count} alerts ({percentage.toFixed(1)}%)</Badge>
+                          </div>
+                          <div className="h-2 bg-muted rounded-full overflow-hidden">
+                            <div
+                              className={colors[severity] || "bg-gray-500"}
+                              style={{ width: `${percentage}%` }}
+                            />
+                          </div>
+                        </div>
+                      );
+                    })}
+                </div>
+                <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
+                  <h4 className="font-semibold text-sm mb-2">Severity Level Guide:</h4>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+                    <li><strong>Sev0 (Emergency):</strong> System down or critical service failure - requires immediate response</li>
+                    <li><strong>Sev1 (Critical):</strong> Major functionality impaired - needs urgent investigation</li>
+                    <li><strong>Sev2 (Error):</strong> Significant issue detected - should be addressed soon</li>
+                    <li><strong>Sev3 (Warning):</strong> Potential issue identified - monitor for escalation</li>
+                    <li><strong>Sev4 (Informational):</strong> Status update - for awareness and trending</li>
+                  </ul>
                 </div>
               </CardContent>
             </Card>
           </TabsContent>
 
           <TabsContent value="overview" className="space-y-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Severity Distribution</CardTitle>
-                  <CardDescription>Alert count by severity level</CardDescription>
+                  <CardTitle className="text-base">Alert Distribution by Type</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <img
-                    src="/visualizations/severity_distribution.png"
-                    alt="Severity Distribution"
-                    className="w-full h-auto rounded-lg"
-                  />
+                  <img src="/visualizations/severity_distribution.png" alt="Severity Distribution" className="w-full rounded-lg" />
                 </CardContent>
               </Card>
-
               <Card>
                 <CardHeader>
-                  <CardTitle>Signal Type Distribution</CardTitle>
-                  <CardDescription>Breakdown of alert signal types</CardDescription>
+                  <CardTitle className="text-base">Signal Type Distribution</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <img
-                    src="/visualizations/signal_type_distribution.png"
-                    alt="Signal Type Distribution"
-                    className="w-full h-auto rounded-lg"
-                  />
+                  <img src="/visualizations/signal_distribution.png" alt="Signal Distribution" className="w-full rounded-lg" />
                 </CardContent>
               </Card>
             </div>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Top Resource Types</CardTitle>
-                <CardDescription>Most frequently monitored resource types</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img
-                  src="/visualizations/resource_type_distribution.png"
-                  alt="Resource Type Distribution"
-                  className="w-full h-auto rounded-lg"
-                />
-              </CardContent>
-            </Card>
           </TabsContent>
 
           <TabsContent value="correlations" className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Correlation Matrix</CardTitle>
-                <CardDescription>
-                  Pearson correlation coefficients between encoded categorical variables
-                </CardDescription>
+                <CardTitle>Statistical Relationships</CardTitle>
+                <CardDescription>How different alert attributes relate to each other</CardDescription>
               </CardHeader>
               <CardContent>
-                <img
-                  src="/visualizations/correlation_matrix.png"
-                  alt="Correlation Matrix"
-                  className="w-full h-auto rounded-lg max-w-2xl mx-auto"
-                />
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Severity vs Resource Type Heatmap</CardTitle>
-                <CardDescription>Cross-tabulation showing alert counts for each combination</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img
-                  src="/visualizations/severity_resource_heatmap.png"
-                  alt="Severity Resource Heatmap"
-                  className="w-full h-auto rounded-lg"
-                />
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Severity by Signal Type</CardTitle>
-                <CardDescription>Stacked bar chart showing severity distribution across signal types</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img
-                  src="/visualizations/severity_signal_stacked.png"
-                  alt="Severity Signal Stacked"
-                  className="w-full h-auto rounded-lg"
-                />
+                <img src="/visualizations/correlation_heatmap.png" alt="Correlation Heatmap" className="w-full rounded-lg" />
               </CardContent>
             </Card>
           </TabsContent>
@@ -513,128 +371,37 @@ export default function Home() {
           <TabsContent value="distributions" className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Top 15 Alert Names</CardTitle>
-                <CardDescription>Most frequently occurring alert configurations</CardDescription>
+                <CardTitle>Resource Type Distribution</CardTitle>
+                <CardDescription>Which Azure services are most heavily monitored</CardDescription>
               </CardHeader>
               <CardContent>
-                <img
-                  src="/visualizations/top_alert_names.png"
-                  alt="Top Alert Names"
-                  className="w-full h-auto rounded-lg"
-                />
+                <img src="/visualizations/resource_distribution.png" alt="Resource Distribution" className="w-full rounded-lg" />
               </CardContent>
             </Card>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Severity Breakdown</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {Object.entries(insights.severity_distribution)
-                      .sort((a, b) => b[1] - a[1])
-                      .map(([severity, count]) => (
-                        <div key={severity} className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <Badge
-                              variant={
-                                severity === "Sev0"
-                                  ? "destructive"
-                                  : severity === "Sev1"
-                                    ? "destructive"
-                                    : severity === "Sev2"
-                                      ? "default"
-                                      : "outline"
-                              }
-                            >
-                              {severity}
-                            </Badge>
-                            <span className="text-sm">{count} alerts</span>
-                          </div>
-                          <div className="text-sm text-muted-foreground">
-                            {((count / insights.total_alerts) * 100).toFixed(1)}%
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Top Resource Types</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {Object.entries(insights.resource_type_distribution).map(([resource, count]) => (
-                      <div key={resource} className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 rounded-full bg-primary"></div>
-                          <span className="text-sm">{resource}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="text-sm font-medium">{count}</span>
-                          <span className="text-xs text-muted-foreground">
-                            ({((count / insights.total_alerts) * 100).toFixed(1)}%)
-                          </span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
           </TabsContent>
 
           <TabsContent value="environment" className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Alert Distribution by Environment</CardTitle>
-                <CardDescription>
-                  Alerts categorized by deployment environment (extracted from target scope)
-                </CardDescription>
+                <CardTitle>Environment Breakdown</CardTitle>
+                <CardDescription>Alert distribution across development, staging, and production</CardDescription>
               </CardHeader>
               <CardContent>
-                <img
-                  src="/visualizations/environment_distribution.png"
-                  alt="Environment Distribution"
-                  className="w-full h-auto rounded-lg"
-                />
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Severity Distribution by Environment</CardTitle>
-                <CardDescription>How severity levels vary across different environments</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img
-                  src="/visualizations/severity_by_environment.png"
-                  alt="Severity by Environment"
-                  className="w-full h-auto rounded-lg"
-                />
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Environment Statistics</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {Object.entries(insights.environment_distribution)
-                    .sort((a, b) => b[1] - a[1])
-                    .map(([env, count]) => (
-                      <div key={env} className="p-4 bg-muted/50 rounded-lg">
-                        <div className="text-sm font-medium text-muted-foreground mb-1">{env}</div>
-                        <div className="text-2xl font-bold">{count}</div>
-                        <div className="text-xs text-muted-foreground mt-1">
-                          {((count / insights.total_alerts) * 100).toFixed(1)}% of total
+                <div className="space-y-4">
+                  {Object.entries(insights.environment_distribution).map(([env, count]) => {
+                    const percentage = (count / insights.total_alerts) * 100;
+                    return (
+                      <div key={env}>
+                        <div className="flex items-center justify-between mb-2">
+                          <p className="font-medium text-sm">{env}</p>
+                          <Badge variant="secondary">{count} alerts ({percentage.toFixed(1)}%)</Badge>
+                        </div>
+                        <div className="h-2 bg-muted rounded-full overflow-hidden">
+                          <div className="bg-primary" style={{ width: `${percentage}%` }} />
                         </div>
                       </div>
-                    ))}
+                    );
+                  })}
                 </div>
               </CardContent>
             </Card>
@@ -645,10 +412,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border mt-8 py-4 bg-card/50">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>Azure Monitor Analytics Dashboard • Data-driven insights for alert management</p>
+          <p>Azure Monitor Analytics Dashboard • Executive monitoring insights and configuration analysis</p>
         </div>
       </footer>
     </div>
   );
 }
-
