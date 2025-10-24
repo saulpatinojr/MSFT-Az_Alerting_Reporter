@@ -1,0 +1,83 @@
+{
+  "resource_type": "Application Insights",
+  "total_instances": 102,
+  "instances": [
+    {
+      "name": "UCP-STG-Backend-WebApp-AppInsights",
+      "resource_group": "UCP-STG-Monitoring-RG",
+      "location": "East US",
+      "subscription": "UCP-DEV-Subscription"
+    },
+    {
+      "name": "UCP-STG-Frontend-WebApp-AppInsights",
+      "resource_group": "UCP-STG-Monitoring-RG",
+      "location": "East US",
+      "subscription": "UCP-DEV-Subscription"
+    },
+    {
+      "name": "dev-d360-alchemy-eus-func-ai",
+      "resource_group": "dev-d360-app-eus-rg",
+      "location": "East US",
+      "subscription": "dev-d360-sub"
+    },
+    {
+      "name": "dev-d360-amssagar-eus-app-ai",
+      "resource_group": "dev-d360-app-eus-rg",
+      "location": "East US",
+      "subscription": "dev-d360-sub"
+    },
+    {
+      "name": "dev-d360-documentserver-eus-app-ai",
+      "resource_group": "dev-d360-app-eus-rg",
+      "location": "East US",
+      "subscription": "dev-d360-sub"
+    },
+    {
+      "name": "dev-d360-infogen-eus-app-ai",
+      "resource_group": "dev-d360-app-eus-rg",
+      "location": "East US",
+      "subscription": "dev-d360-sub"
+    },
+    {
+      "name": "dev-d360-eur-appinsights",
+      "resource_group": "dev-d360-mgmt-eus-rg",
+      "location": "East US",
+      "subscription": "dev-d360-sub"
+    }
+  ],
+  "metrics": {
+    "total_requests": 1250000,
+    "failed_requests": 3420,
+    "avg_response_time_ms": 245,
+    "availability_percent": 99.73,
+    "active_users": 8540,
+    "page_views": 450000
+  },
+  "alerts_configured": 733,
+  "severity_breakdown": {
+    "Sev0": 89,
+    "Sev1": 276,
+    "Sev2": 1,
+    "Sev3": 312,
+    "Sev4": 55
+  },
+  "common_alert_types": [
+    "Performance anomalies",
+    "Failed requests threshold",
+    "Response time degradation",
+    "Availability drops",
+    "Exception rate increase",
+    "User activity anomalies"
+  ],
+  "regions": [
+    "East US",
+    "West US",
+    "Canada Central",
+    "Canada East"
+  ],
+  "subscriptions": [
+    "UCP-DEV-Subscription",
+    "dev-d360-sub",
+    "DISAScreen-DEV-Subscription"
+  ]
+}

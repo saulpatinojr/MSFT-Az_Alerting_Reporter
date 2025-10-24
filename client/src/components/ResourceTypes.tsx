@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useLocation } from "wouter";
 import { 
   Server, 
   Network, 
@@ -72,11 +73,26 @@ const categoryColors: { [key: string]: string } = {
 };
 
 export default function ResourceTypes({ data }: ResourceTypesProps) {
+  const [, setLocation] = useLocation();
+  
   const sortedCategories = Object.entries(data.categories).sort((a, b) => {
     const totalA = Object.values(a[1]).reduce((sum, val) => sum + val, 0);
     const totalB = Object.values(b[1]).reduce((sum, val) => sum + val, 0);
     return totalB - totalA;
   });
+
+  const handleResourceClick = (resource: string) => {
+    // Map resource names to routes
+    const routeMap: { [key: string]: string } = {
+      "Application Insights": "/resource/application-insights",
+      // Add more mappings as needed
+    };
+    
+    const route = routeMap[resource];
+    if (route) {
+      setLocation(route);
+    }
+  };
 
   return (
     <div className="space-y-6">
@@ -105,7 +121,11 @@ export default function ResourceTypes({ data }: ResourceTypesProps) {
                   {Object.entries(resources)
                     .sort((a, b) => b[1] - a[1])
                     .map(([resource, count]) => (
-                      <div key={resource} className="flex items-center justify-between text-sm">
+                      <div 
+                        key={resource} 
+                        className="flex items-center justify-between text-sm p-2 rounded hover:bg-muted/50 cursor-pointer transition-colors"
+                        onClick={() => handleResourceClick(resource)}
+                      >
                         <span className="text-muted-foreground">{resource}</span>
                         <span className="font-medium">{count}</span>
                       </div>
