@@ -1,0 +1,82 @@
+{
+  "virtual_machines": {
+    "resource_type": "Virtual machine",
+    "total_instances": 185,
+    "monitored": 42,
+    "not_monitored": 143,
+    "metrics": {
+      "monitoring_coverage_percent": 22.7,
+      "workspace_configured": 42,
+      "data_collection_rules": 35
+    },
+    "alerts_configured": 97
+  },
+  "service_bus": {
+    "resource_type": "Service Bus Namespace",
+    "total_instances": 14,
+    "metrics": {
+      "total_incoming_requests": 53243708,
+      "total_incoming_messages": 21367147,
+      "total_outgoing_messages": 12481426
+    },
+    "alerts_configured": 6
+  },
+  "key_vault": {
+    "resource_type": "Key vault",
+    "total_instances": 74,
+    "metrics": {
+      "total_requests": 7114101,
+      "total_api_hits": 7118387
+    },
+    "alerts_configured": 10
+  },
+  "storage": {
+    "resource_type": "Storage account",
+    "total_instances": 200,
+    "metrics": {
+      "total_capacity_bytes": 31169063254755,
+      "blob_capacity_bytes": 26844276309612
+    },
+    "alerts_configured": 2
+  },
+  "cosmos_db": {
+    "resource_type": "Azure Cosmos DB account",
+    "total_instances": 13,
+    "total_collections": 103,
+    "metrics": {
+      "total_requests": 3357792
+    },
+    "alerts_configured": 2
+  },
+  "redis": {
+    "resource_type": "Azure Cache for Redis",
+    "total_instances": 6,
+    "metrics": {
+      "avg_used_memory_percent": 2.0,
+      "avg_server_load": 9.833333333333334,
+      "total_operations": 2458
+    },
+    "alerts_configured": 0
+  },
+  "log_analytics": {
+    "resource_type": "Log Analytics workspace",
+    "total_instances": 101,
+    "metrics": {
+      "avg_retention_days": 30,
+      "total_daily_cap_gb": 4
+    },
+    "alerts_configured": 0
+  },
+  "networking": {
+    "resource_type": "Networking",
+    "resources": {
+      "Application gateways": 12,
+      "Load balancers": 1,
+      "Virtual network gateways": 15,
+      "VPN gateways": 2,
+      "NAT Gateways": 7
+    },
+    "total_alerts": 58,
+    "alerts_configured": 3
+  }
+}

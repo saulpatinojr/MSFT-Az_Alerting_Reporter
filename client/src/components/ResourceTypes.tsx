@@ -85,7 +85,14 @@ export default function ResourceTypes({ data }: ResourceTypesProps) {
     // Map resource names to routes
     const routeMap: { [key: string]: string } = {
       "Application Insights": "/resource/application-insights",
-      // Add more mappings as needed
+      "Virtual machine": "/resource/virtual-machines",
+      "Service Bus Namespace": "/resource/service-bus",
+      "Key vault": "/resource/key-vault",
+      "Storage account": "/resource/storage",
+      "Azure Cosmos DB account": "/resource/cosmos-db",
+      "Log Analytics workspace": "/resource/log-analytics",
+      "Application gateway": "/resource/networking",
+      "Load balancer": "/resource/networking",
     };
     
     const route = routeMap[resource];
