@@ -1,58 +1,67 @@
 import { useState, useEffect } from "react";
+import { dataService } from "@/services/dataService";
+import { DashboardInsights, ResourceAnalysis } from "@/services/types"; // Assuming ResourceAnalysis is still used for the old structure for now, will refine later.
+import { AlertCircle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { AlertCircle, TrendingUp, Activity, Database, Maximize2, Minimize2 } from "lucide-react";
+import { TrendingUp, Activity, Database, Maximize2, Minimize2 } from "lucide-react";
 import ResourceTypes from "@/components/ResourceTypes";
+import { useLocation } from "wouter";
+import { Link } from "wouter";
+import { AlertTriangle, Server, GitBranch, Settings, Globe, Star } from "lucide-react";
 
-interface InsightsData {
-  total_alerts: number;
-  unique_alert_names: number;
-  most_common_severity: string;
-  severity_distribution: {
-    [key: string]: number;
-  };
-  resource_type_distribution: {
-    [key: string]: number;
-  };
-  signal_type_distribution: {
-    [key: string]: number;
-  };
-  environment_distribution: {
-    [key: string]: number;
-  };
-  key_insights: string[];
-}
-
-interface ResourceAnalysis {
-  categories: {
-    [category: string]: {
-      [resource: string]: number;
-    };
-  };
-  resource_severity: {
-    [resource: string]: {
-      [severity: string]: number;
-    };
-  };
-}
+// The old interfaces are replaced by the ones in services/types.ts
+// The component is updated to use the new data service and loading/error states.
 
 export default function Home() {
-  const [insights, setInsights] = useState<InsightsData | null>(null);
-  const [resourceData, setResourceData] = useState<ResourceAnalysis | null>(null);
+  const [insights, setInsights] = useState<DashboardInsights | null>(null);
+  const [insightsLoading, setInsightsLoading] = useState(true);
+  const [insightsError, setInsightsError] = useState<string | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [location] = useLocation();
+
+  // Define the new dashboard links
+  const newDashboards = [
+    { name: "Alert Fatigue Risk", icon: AlertTriangle, path: "/dashboard/alert-fatigue" },
+    { name: "Resource Health Status", icon: Server, path: "/dashboard/resource-health" },
+    { name: "Alert Correlation", icon: GitBranch, path: "/dashboard/alert-correlation" },
+    { name: "Configuration Analysis", icon: Settings, path: "/dashboard/configuration-analysis" },
+    { name: "Environment Distribution", icon: Globe, path: "/dashboard/environment-distribution" },
+    { name: "Monitoring Maturity & ROI", icon: Star, path: "/dashboard/monitoring-maturity" },
+  ];
 
   useEffect(() => {
-    fetch("/visualizations/insights.json")
-      .then((res) => res.json())
-      .then((data) => setInsights(data))
-      .catch((err) => console.error("Failed to load insights:", err));
+    let timeout: NodeJS.Timeout | null = null;
+    
+    // Set a timeout for data loading
+    timeout = setTimeout(() => {
+      if (insightsLoading) {
+        setInsightsError("Data loading timeout (5s). Please check network connection.");
+        setInsightsLoading(false);
+      }
+    }, 5000);
 
-    fetch("/resource_analysis.json")
-      .then((res) => res.json())
-      .then((data) => setResourceData(data))
-      .catch((err) => console.error("Failed to load resource data:", err));
+    dataService.fetchDashboardInsights()
+      .then((data) => {
+        setInsights(data);
+        setInsightsLoading(false);
+        if (timeout) clearTimeout(timeout);
+      })
+      .catch((err) => {
+        console.error("Failed to load dashboard insights:", err);
+        setInsightsError("Failed to load dashboard data. Please refresh.");
+        setInsightsLoading(false);
+        if (timeout) clearTimeout(timeout);
+      });
+
+    // The old resourceData fetch is removed here, as it will be replaced by a React Query hook
+    // in the ResourceTypes component later.
+
+    return () => {
+      if (timeout) clearTimeout(timeout);
+    };
   }, []);
 
   useEffect(() => {
@@ -71,7 +80,23 @@ export default function Home() {
     }
   };
 
-  if (!insights) {
+  if (insightsError) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <Card className="max-w-md">
+          <CardContent className="pt-6">
+            <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
+            <p className="text-center text-sm text-muted-foreground">{insightsError}</p>
+            <Button onClick={() => window.location.reload()} className="w-full mt-4">
+              Retry
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  if (insightsLoading || !insights) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
@@ -250,163 +275,179 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        {/* Visualizations Tabs */}
-        <Tabs defaultValue="overview" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6">
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="resources">Resource Types</TabsTrigger>
-            <TabsTrigger value="severity">Severity Analysis</TabsTrigger>
-            <TabsTrigger value="correlations">Analysis</TabsTrigger>
-            <TabsTrigger value="distributions">Distribution</TabsTrigger>
-            <TabsTrigger value="environment">Environment</TabsTrigger>
-          </TabsList>
+	        {/* Visualizations Tabs */}
+	        <Tabs defaultValue="overview" className="space-y-6">
+	          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+	            <TabsTrigger value="overview">Overview</TabsTrigger>
+	            <TabsTrigger value="resources">Resource Types</TabsTrigger>
+	            <TabsTrigger value="advanced-analysis">Advanced Analysis</TabsTrigger>
+	            <TabsTrigger value="severity">Severity Analysis</TabsTrigger>
+	            <TabsTrigger value="correlations">Correlation</TabsTrigger>
+	            <TabsTrigger value="distributions">Distribution</TabsTrigger>
+	            <TabsTrigger value="environment">Environment</TabsTrigger>
+	          </TabsList>
 
-          <TabsContent value="resources" className="space-y-6">
-            {resourceData ? (
-              <ResourceTypes data={resourceData} />
-            ) : (
-              <Card>
-                <CardContent className="py-8">
-                  <div className="text-center text-muted-foreground">Loading resource type data...</div>
-                </CardContent>
-              </Card>
-            )}
-          </TabsContent>
+	          <TabsContent value="overview" className="space-y-6">
+	            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+	              <Card>
+	                <CardHeader>
+	                  <CardTitle className="text-base">Alert Distribution by Type</CardTitle>
+	                </CardHeader>
+	                <CardContent>
+	                  <img src="/visualizations/severity_distribution.png" alt="Severity Distribution" className="w-full rounded-lg" />
+	                </CardContent>
+	              </Card>
+	              <Card>
+	                <CardHeader>
+	                  <CardTitle className="text-base">Signal Type Distribution</CardTitle>
+	                </CardHeader>
+	                <CardContent>
+	                  <img src="/visualizations/signal_distribution.png" alt="Signal Distribution" className="w-full rounded-lg" />
+	                </CardContent>
+	              </Card>
+	            </div>
+	          </TabsContent>
 
-          <TabsContent value="severity" className="space-y-6">
-            <Card className="border-orange-500/20 bg-orange-500/5">
-              <CardHeader>
-                <CardTitle>Alert Severity Breakdown</CardTitle>
-                <CardDescription>How your 1,000 alert rules are distributed by priority level</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {Object.entries(insights.severity_distribution)
-                    .sort((a, b) => {
-                      const order = { Sev0: 0, Sev1: 1, Sev2: 2, Sev3: 3, Sev4: 4 };
-                      return (order[a[0] as keyof typeof order] || 5) - (order[b[0] as keyof typeof order] || 5);
-                    })
-                    .map(([severity, count]) => {
-                      const percentage = (count / insights.total_alerts) * 100;
-                      const severityLabels: { [key: string]: string } = {
-                        Sev0: "Emergency - Immediate action required",
-                        Sev1: "Critical - Urgent attention needed",
-                        Sev2: "Error - Important issue detected",
-                        Sev3: "Warning - Monitor closely",
-                        Sev4: "Informational - For awareness",
-                      };
-                      const colors: { [key: string]: string } = {
-                        Sev0: "bg-red-500",
-                        Sev1: "bg-orange-500",
-                        Sev2: "bg-yellow-500",
-                        Sev3: "bg-blue-500",
-                        Sev4: "bg-green-500",
-                      };
-                      return (
-                        <div key={severity}>
-                          <div className="flex items-center justify-between mb-2">
-                            <div>
-                              <p className="font-medium text-sm">{severityLabels[severity]}</p>
-                              <p className="text-xs text-muted-foreground">{severity}</p>
-                            </div>
-                            <Badge variant="secondary">{count} alerts ({percentage.toFixed(1)}%)</Badge>
-                          </div>
-                          <div className="h-2 bg-muted rounded-full overflow-hidden">
-                            <div
-                              className={colors[severity] || "bg-gray-500"}
-                              style={{ width: `${percentage}%` }}
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
-                </div>
-                <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
-                  <h4 className="font-semibold text-sm mb-2">Severity Level Guide:</h4>
-                  <ul className="space-y-1.5 text-sm text-muted-foreground">
-                    <li><strong>Sev0 (Emergency):</strong> System down or critical service failure - requires immediate response</li>
-                    <li><strong>Sev1 (Critical):</strong> Major functionality impaired - needs urgent investigation</li>
-                    <li><strong>Sev2 (Error):</strong> Significant issue detected - should be addressed soon</li>
-                    <li><strong>Sev3 (Warning):</strong> Potential issue identified - monitor for escalation</li>
-                    <li><strong>Sev4 (Informational):</strong> Status update - for awareness and trending</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
+	          <TabsContent value="resources" className="space-y-6">
+	            <ResourceTypes />
+	          </TabsContent>
 
-          <TabsContent value="overview" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base">Alert Distribution by Type</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <img src="/visualizations/severity_distribution.png" alt="Severity Distribution" className="w-full rounded-lg" />
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base">Signal Type Distribution</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <img src="/visualizations/signal_distribution.png" alt="Signal Distribution" className="w-full rounded-lg" />
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
+	          <TabsContent value="advanced-analysis" className="space-y-6">
+	            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+	              {newDashboards.map((dashboard) => (
+	                <Link key={dashboard.path} href={dashboard.path}>
+	                  <Card className="hover:border-primary transition-colors cursor-pointer group">
+	                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+	                      <CardTitle className="text-sm font-medium">{dashboard.name}</CardTitle>
+	                      <dashboard.icon className="h-4 w-4 text-muted-foreground group-hover:text-primary" />
+	                    </CardHeader>
+	                    <CardContent>
+	                      <div className="text-2xl font-bold">View</div>
+	                      <p className="text-xs text-muted-foreground">Drill-down for executive insights</p>
+	                    </CardContent>
+	                  </Card>
+	                </Link>
+	              ))}
+	            </div>
+	          </TabsContent>
 
-          <TabsContent value="correlations" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Statistical Relationships</CardTitle>
-                <CardDescription>How different alert attributes relate to each other</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img src="/visualizations/correlation_heatmap.png" alt="Correlation Heatmap" className="w-full rounded-lg" />
-              </CardContent>
-            </Card>
-          </TabsContent>
+	          <TabsContent value="severity" className="space-y-6">
+	            <Card className="border-orange-500/20 bg-orange-500/5">
+	              <CardHeader>
+	                <CardTitle>Alert Severity Breakdown</CardTitle>
+	                <CardDescription>How your 1,000 alert rules are distributed by priority level</CardDescription>
+	              </CardHeader>
+	              <CardContent>
+	                <div className="space-y-4">
+	                  {/* Re-implementing the severity distribution logic using the new insights structure */}
+	                  {Object.entries({
+	                    Sev0: insights.alert_metrics.sev0,
+	                    Sev1: insights.alert_metrics.sev1,
+	                    Sev2: insights.alert_metrics.sev2,
+	                    Sev3: insights.alert_metrics.sev3,
+	                    Sev4: insights.alert_metrics.sev4,
+	                  })
+	                    .sort(([, countA], [, countB]) => countB - countA)
+	                    .map(([severity, count]) => {
+	                      const percentage = (count / insights.alert_metrics.total_alerts) * 100;
+	                      const severityLabels: { [key: string]: string } = {
+	                        Sev0: "Emergency - Immediate action required",
+	                        Sev1: "Critical - Urgent attention needed",
+	                        Sev2: "Error - Important issue detected",
+	                        Sev3: "Warning - Monitor closely",
+	                        Sev4: "Informational - For awareness",
+	                      };
+	                      const colors: { [key: string]: string } = {
+	                        Sev0: "bg-red-500",
+	                        Sev1: "bg-orange-500",
+	                        Sev2: "bg-yellow-500",
+	                        Sev3: "bg-blue-500",
+	                        Sev4: "bg-green-500",
+	                      };
+	                      return (
+	                        <div key={severity}>
+	                          <div className="flex items-center justify-between mb-2">
+	                            <div>
+	                              <p className="font-medium text-sm">{severityLabels[severity]}</p>
+	                              <p className="text-xs text-muted-foreground">{severity}</p>
+	                            </div>
+	                            <Badge variant="secondary">{count} alerts ({percentage.toFixed(1)}%)</Badge>
+	                          </div>
+	                          <div className="h-2 bg-muted rounded-full overflow-hidden">
+	                            <div
+	                              className={colors[severity] || "bg-gray-500"}
+	                              style={{ width: `${percentage}%` }}
+	                            />
+	                          </div>
+	                        </div>
+	                      );
+	                    })}
+	                </div>
+	                <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
+	                  <h4 className="font-semibold text-sm mb-2">Severity Level Guide:</h4>
+	                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+	                    <li aria-label="Severity 0: Emergency"><strong>Sev0 (Emergency):</strong> System down or critical service failure - requires immediate response</li>
+	                    <li aria-label="Severity 1: Critical"><strong>Sev1 (Critical):</strong> Major functionality impaired - needs urgent investigation</li>
+	                    <li aria-label="Severity 2: Error"><strong>Sev2 (Error):</strong> Significant issue detected - should be addressed soon</li>
+	                    <li aria-label="Severity 3: Warning"><strong>Sev3 (Warning):</strong> Potential issue identified - monitor for escalation</li>
+	                    <li aria-label="Severity 4: Informational"><strong>Sev4 (Informational):</strong> Status update - for awareness and trending</li>
+	                  </ul>
+	                </div>
+	              </CardContent>
+	            </Card>
+	          </TabsContent>
 
-          <TabsContent value="distributions" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Resource Type Distribution</CardTitle>
-                <CardDescription>Which Azure services are most heavily monitored</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img src="/visualizations/resource_distribution.png" alt="Resource Distribution" className="w-full rounded-lg" />
-              </CardContent>
-            </Card>
-          </TabsContent>
+	          <TabsContent value="correlations" className="space-y-6">
+	            <Card>
+	              <CardHeader>
+	                <CardTitle>Statistical Relationships</CardTitle>
+	                <CardDescription>How different alert attributes relate to each other</CardDescription>
+	              </CardHeader>
+	              <CardContent>
+	                <img src="/visualizations/correlation_heatmap.png" alt="Correlation Heatmap" className="w-full rounded-lg" />
+	              </CardContent>
+	            </Card>
+	          </TabsContent>
 
-          <TabsContent value="environment" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Environment Breakdown</CardTitle>
-                <CardDescription>Alert distribution across development, staging, and production</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {Object.entries(insights.environment_distribution).map(([env, count]) => {
-                    const percentage = (count / insights.total_alerts) * 100;
-                    return (
-                      <div key={env}>
-                        <div className="flex items-center justify-between mb-2">
-                          <p className="font-medium text-sm">{env}</p>
-                          <Badge variant="secondary">{count} alerts ({percentage.toFixed(1)}%)</Badge>
-                        </div>
-                        <div className="h-2 bg-muted rounded-full overflow-hidden">
-                          <div className="bg-primary" style={{ width: `${percentage}%` }} />
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-        </Tabs>
+	          <TabsContent value="distributions" className="space-y-6">
+	            <Card>
+	              <CardHeader>
+	                <CardTitle>Resource Type Distribution</CardTitle>
+	                <CardDescription>Which Azure services are most heavily monitored</CardDescription>
+	              </CardHeader>
+	              <CardContent>
+	                <img src="/visualizations/resource_distribution.png" alt="Resource Distribution" className="w-full rounded-lg" />
+	              </CardContent>
+	            </Card>
+	          </TabsContent>
+
+	          <TabsContent value="environment" className="space-y-6">
+	            <Card>
+	              <CardHeader>
+	                <CardTitle>Environment Breakdown</CardTitle>
+	                <CardDescription>Alert distribution across development, staging, and production</CardDescription>
+	              </CardHeader>
+	              <CardContent>
+	                <div className="space-y-4">
+	                  {insights.environment_distribution.map((env) => {
+	                    const percentage = (env.total_alerts / insights.alert_metrics.total_alerts) * 100;
+	                    return (
+	                      <div key={env.environment}>
+	                        <div className="flex items-center justify-between mb-2">
+	                          <p className="font-medium text-sm">{env.environment}</p>
+	                          <Badge variant="secondary">{env.total_alerts} alerts ({percentage.toFixed(1)}%)</Badge>
+	                        </div>
+	                        <div className="h-2 bg-muted rounded-full overflow-hidden">
+	                          <div className="bg-primary" style={{ width: `${percentage}%` }} />
+	                        </div>
+	                      </div>
+	                    );
+	                  })}
+	                </div>
+	              </CardContent>
+	            </Card>
+	          </TabsContent>
+	        </Tabs>
       </main>
 
       {/* Footer */}
