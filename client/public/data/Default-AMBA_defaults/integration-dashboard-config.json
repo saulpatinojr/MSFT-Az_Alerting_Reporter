@@ -1,0 +1,108 @@
+{
+  "dashboardConfig": {
+    "title": "Lab Integration Health Dashboard",
+    "refreshInterval": 300,
+    "sections": {
+      "overview": {
+        "title": "Integration Overview",
+        "widgets": [
+          {
+            "type": "statusCard",
+            "title": "Overall Health",
+            "metrics": ["totalIntegrations", "activeIntegrations", "failingIntegrations"]
+          },
+          {
+            "type": "pieChart",
+            "title": "Integration Status Distribution",
+            "dataKey": "statusDistribution"
+          }
+        ]
+      },
+      "labSystems": {
+        "title": "Lab Systems Status",
+        "widgets": [
+          {
+            "type": "statusGrid",
+            "title": "CRL Integration Status",
+            "metrics": [
+              "messageProcessingRate",
+              "errorRate",
+              "avgProcessingTime",
+              "queueDepth"
+            ]
+          },
+          {
+            "type": "statusGrid",
+            "title": "Abbott Integration Status",
+            "metrics": [
+              "messageProcessingRate",
+              "errorRate",
+              "avgProcessingTime",
+              "queueDepth"
+            ]
+          },
+          {
+            "type": "statusGrid",
+            "title": "LabCorp Integration Status",
+            "metrics": [
+              "messageProcessingRate",
+              "errorRate",
+              "avgProcessingTime",
+              "queueDepth"
+            ]
+          }
+        ]
+      },
+      "alerts": {
+        "title": "Active Alerts",
+        "widgets": [
+          {
+            "type": "alertList",
+            "title": "Critical Alerts",
+            "filter": {
+              "severity": [0, 1],
+              "timeWindow": "24h"
+            }
+          },
+          {
+            "type": "timelineChart",
+            "title": "Alert Trend",
+            "metrics": ["alertsTriggered", "alertsResolved"],
+            "timeWindow": "7d"
+          }
+        ]
+      },
+      "performance": {
+        "title": "Integration Performance",
+        "widgets": [
+          {
+            "type": "lineChart",
+            "title": "Message Processing Latency",
+            "metrics": ["avgProcessingTime"],
+            "groupBy": "labSystem"
+          },
+          {
+            "type": "barChart",
+            "title": "Error Distribution by Type",
+            "dataKey": "errorTypes",
+            "groupBy": "labSystem"
+          }
+        ]
+      }
+    },
+    "thresholds": {
+      "errorRate": {
+        "warning": 5,
+        "critical": 10
+      },
+      "processingTime": {
+        "warning": 30000,
+        "critical": 60000
+      },
+      "queueDepth": {
+        "warning": 1000,
+        "critical": 5000
+      }
+    }
+  }
+}

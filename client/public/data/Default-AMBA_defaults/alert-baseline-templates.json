@@ -1,0 +1,100 @@
+{
+  "baselineTemplates": {
+    "applicationInsights": {
+      "availability": {
+        "name": "Availability Test Alert",
+        "severity": 1,
+        "condition": {
+          "threshold": 90,
+          "operator": "LessThan",
+          "windowSize": "PT5M",
+          "aggregation": "Average"
+        },
+        "description": "Triggers when availability drops below 90% over 5 minutes"
+      },
+      "failureRate": {
+        "name": "Failed Requests Alert",
+        "severity": 2,
+        "condition": {
+          "threshold": 5,
+          "operator": "GreaterThan",
+          "windowSize": "PT15M",
+          "aggregation": "Average"
+        },
+        "description": "Triggers when failure rate exceeds 5% over 15 minutes"
+      },
+      "responseTime": {
+        "name": "Response Time Alert",
+        "severity": 2,
+        "condition": {
+          "threshold": 3,
+          "operator": "GreaterThan",
+          "windowSize": "PT5M",
+          "aggregation": "Average"
+        },
+        "description": "Triggers when average response time exceeds 3 seconds over 5 minutes"
+      }
+    },
+    "labIntegration": {
+      "missingAccessionCode": {
+        "name": "Lab Integration - Missing Accession Code",
+        "severity": 2,
+        "condition": {
+          "threshold": 10,
+          "operator": "GreaterThan",
+          "windowSize": "PT30M",
+          "aggregation": "Total"
+        },
+        "description": "Triggers when more than 10 missing accession codes are detected in 30 minutes"
+      },
+      "invalidResultFile": {
+        "name": "Lab Integration - Invalid Result File",
+        "severity": 2,
+        "condition": {
+          "threshold": 5,
+          "operator": "GreaterThan",
+          "windowSize": "PT15M",
+          "aggregation": "Total"
+        },
+        "description": "Triggers when more than 5 invalid result files are detected in 15 minutes"
+      }
+    },
+    "systemHealth": {
+      "cpuUsage": {
+        "name": "High CPU Usage",
+        "severity": 3,
+        "condition": {
+          "threshold": 80,
+          "operator": "GreaterThan",
+          "windowSize": "PT15M",
+          "aggregation": "Average"
+        },
+        "description": "Triggers when CPU usage exceeds 80% over 15 minutes"
+      },
+      "memoryUsage": {
+        "name": "High Memory Usage",
+        "severity": 3,
+        "condition": {
+          "threshold": 85,
+          "operator": "GreaterThan",
+          "windowSize": "PT15M",
+          "aggregation": "Average"
+        },
+        "description": "Triggers when memory usage exceeds 85% over 15 minutes"
+      }
+    }
+  },
+  "recommendedSeverityLevels": {
+    "0": "Critical system failure affecting multiple services",
+    "1": "Service outage or severe degradation",
+    "2": "Performance degradation or isolated errors",
+    "3": "Warning conditions that may need attention",
+    "4": "Informational alerts for tracking purposes"
+  },
+  "aggregationGuidelines": {
+    "PT5M": "Use for critical metrics requiring immediate response",
+    "PT15M": "Standard window for most operational metrics",
+    "PT30M": "Use for trending patterns and non-critical metrics",
+    "PT1H": "Use for long-term patterns and capacity planning"
+  }
+}

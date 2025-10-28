@@ -176,31 +176,35 @@ export default function Home() {
 ## Common Pitfalls
 
 ### Infinite loading loops from unstable references
-**Anti-pattern:** Creating new objects/arrays in render that are used as query inputs
+**Anti-pattern:** Creating new objects/arrays in render that are used as fetch inputs
 ```tsx
 // ❌ Bad: New Date() creates new reference every render → infinite queries
-const { data } = trpc.items.getByDate.useQuery({
-  date: new Date(), // ← New object every render!
-});
+// Example with a fetcher: avoid new Date() each render
+const [date] = useState(() => new Date());
+useEffect(() => { /* fetch using stable `date` */ }, [date]);
 
 // ❌ Bad: Array/object literals in query input
-const { data } = trpc.items.getByIds.useQuery({
-  ids: [1, 2, 3], // ← New array reference every render!
-});
+// Avoid creating new arrays/objects in dependency lists or fetch inputs
+const ids = useMemo(() => [1, 2, 3], []);
+useEffect(() => { /* fetch using stable `ids` */ }, [ids]);
 ```
 
-**Correct approach:** Stabilize references with useState/useMemo
+**Correct approach:** Stabilize references with useState/useMemo and useEffect
 ```tsx
-// ✅ Good: Initialize once with useState
+// ✅ Good: Initialize once with useState and use in effects
 const [date] = useState(() => new Date());
-const { data } = trpc.items.getByDate.useQuery({ date });
+useEffect(() => {
+  // call your dataService here with stable `date`
+}, [date]);
 
 // ✅ Good: Memoize complex inputs
 const ids = useMemo(() => [1, 2, 3], []);
-const { data } = trpc.items.getByIds.useQuery({ ids });
+useEffect(() => {
+  // call your dataService here with stable `ids`
+}, [ids]);
 ```
 
-**Why this happens:** TRPC queries trigger when input references change. Objects/arrays created in render have new references each time, causing infinite re-fetches.
+**Why this happens:** Effects/fetches trigger when dependency references change. Objects/arrays created in render have new references each time, causing repeated re-fetches.
 
 ### Navigation dead-ends in subpages
 **Problem:** Creating nested routes without escape routes—no header nav, no sidebar, no back button.

@@ -1,0 +1,34 @@
+{
+  "labSystems": [
+    {
+      "name": "CRL Integration",
+      "status": "healthy",
+      "metrics": {
+        "messageProcessingRate": 145.6,
+        "errorRate": 1.2,
+        "avgProcessingTime": 1200,
+        "queueDepth": 42
+      }
+    },
+    {
+      "name": "Abbott Integration",
+      "status": "warning",
+      "metrics": {
+        "messageProcessingRate": 98.3,
+        "errorRate": 4.8,
+        "avgProcessingTime": 2100,
+        "queueDepth": 156
+      }
+    },
+    {
+      "name": "LabCorp Integration",
+      "status": "healthy",
+      "metrics": {
+        "messageProcessingRate": 167.2,
+        "errorRate": 0.8,
+        "avgProcessingTime": 980,
+        "queueDepth": 25
+      }
+    }
+  ]
+}

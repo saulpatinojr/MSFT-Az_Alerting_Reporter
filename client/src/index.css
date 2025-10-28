@@ -146,3 +146,11 @@
   }
 }
 
+/* Quick rule: hide any default user avatar image that may be injected into the UI
+   (useful when a small floating avatar appears in screenshots or during demos).
+   This targets the local asset `client/public/assets/default_user.webp` if used.
+*/
+img[src$="default_user.webp"] {
+  display: none !important;
+}
+

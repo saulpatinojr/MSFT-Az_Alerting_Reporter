@@ -12,6 +12,7 @@ import AlertCorrelationAnalysis from "./pages/AlertCorrelationAnalysis";
 import AlertConfigurationAnalysis from "./pages/AlertConfigurationAnalysis";
 import EnvironmentDistributionDashboard from "./pages/EnvironmentDistributionDashboard";
 import MonitoringMaturityDashboard from "./pages/MonitoringMaturityDashboard";
+import IntegrationHealthDashboard from "./pages/IntegrationHealthDashboard";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path={"/dashboard/configuration-analysis"} component={AlertConfigurationAnalysis} />
       <Route path={"/dashboard/environment-distribution"} component={EnvironmentDistributionDashboard} />
       <Route path={"/dashboard/monitoring-maturity"} component={MonitoringMaturityDashboard} />
+      <Route path={"/dashboard/integration-health"} component={IntegrationHealthDashboard} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -34,7 +36,7 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-	      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+	      <ThemeProvider defaultTheme="dark" switchable={true}>
         <TooltipProvider>
           <Toaster />
           <Router />
