@@ -56,56 +56,22 @@ export default function ApplicationInsights() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
-          <Activity className="w-12 h-12 animate-spin mx-auto mb-4 text-primary" />
-          <p className="text-muted-foreground">Loading Application Insights data...</p>
-        </div>
+          <Activity className="w-12 h-12 animate-spin mx-auto mb-4 text-primary" />	          <p className="text-muted-foreground">Loading Application Insights data...</p>
+	  	      </main>
+	    </ResourcePageLayout>
 	  );
-	}
+	}	  }
 
-  return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-        <div className="container py-4">
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="sm" onClick={() => setLocation("/")}>
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Dashboard
-              </Button>
-              <div className="border-l border-border pl-4">
-                <h1 className="text-2xl font-bold tracking-tight">Application Insights</h1>
-                <p className="text-sm text-muted-foreground">
-                  Monitor live applications - performance anomalies and user activity
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <input
-                type="file"
-                id="file-upload"
-                multiple
-                accept=".csv,.json,.xlsx"
-                className="hidden"
-                onChange={handleFileUpload}
-              />
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => document.getElementById("file-upload")?.click()}
-              >
-                <Upload className="w-4 h-4 mr-2" />
-                Upload Data
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+	  // Total alerts calculation for the severity breakdown section
+	  const totalAlerts = Object.values(data.severity_breakdown).reduce((a, b) => a + b, 0);
 
-
-        {/* Key Metrics */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-          <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 border-blue-500/20">
+	  return (
+	    <ResourcePageLayout
+	      title="Application Insights"
+	      description="Monitor live applications - performance anomalies and user activity"
+	      onBack={() => setLocation("/")}
+	    >
+	      <div className="min-h-screen bg-background">	      <main className="container py-6">          <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 border-blue-500/20">
             <CardHeader className="pb-2">
               <CardTitle className="text-xs font-medium text-muted-foreground flex items-center gap-2">
                 <Activity className="w-4 h-4" />
@@ -200,7 +166,7 @@ export default function ApplicationInsights() {
                     <span className="text-sm font-medium">Severity Distribution</span>
                   </div>
 	                  <div className="space-y-2">
-	                    {Object.entries(appInsightsData.severity_breakdown).map(([severity, count]) => {
+	                    {Object.entries(data.severity_breakdown).map(([severity, count]) => {
 	                      const percentage = (count / totalAlerts) * 100;
 	                      const colors: { [key: string]: string } = {
 	                        Sev0: "bg-red-500",
